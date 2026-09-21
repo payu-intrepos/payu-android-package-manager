@@ -21,6 +21,7 @@ if [[ -n "${GRADLE_MAVEN_DIR}" ]]; then
 fi
 
 python3 scripts/generate_dependency_graph.py
+python3 scripts/generate_indexes.py
 
 if [[ "${PAYU_MAVEN_STRICT}" == "1" ]]; then
   python3 scripts/validate_dependencies.py --strict

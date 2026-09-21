@@ -20,7 +20,9 @@ from pathlib import Path
 from lib import (
     GROUP_ID,
     MAVEN_ROOT,
+    is_snapshot,
     refresh_all_metadata,
+    uniquify_snapshot_dir,
     version_dir,
     write_checksums,
     write_maven_metadata,
@@ -29,10 +31,12 @@ from lib import (
 
 def publish_files(group_id: str, artifact_id: str, version: str, files: list[Path], overwrite: bool) -> None:
     dest_dir = version_dir(group_id, artifact_id, version)
-    if dest_dir.exists() and any(dest_dir.iterdir()) and not overwrite:
+    snapshot = is_snapshot(version)
+    if dest_dir.exists() and any(dest_dir.iterdir()) and not overwrite and not snapshot:
         raise SystemExit(
             f"{group_id}:{artifact_id}:{version} already exists. "
-            "Release versions are immutable. Use --overwrite only to fix a broken publish."
+            "Release versions are immutable. Use --overwrite only to fix a broken publish. "
+            "SNAPSHOT versions can be republished without --overwrite."
         )
 
     dest_dir.mkdir(parents=True, exist_ok=True)
@@ -44,6 +48,8 @@ def publish_files(group_id: str, artifact_id: str, version: str, files: list[Pat
         write_checksums(dest)
         print(f"published {dest.relative_to(MAVEN_ROOT)}")
 
+    if snapshot:
+        uniquify_snapshot_dir(dest_dir, artifact_id, version)
     write_maven_metadata(group_id, artifact_id)
 
 
@@ -62,7 +68,8 @@ def import_gradle_repo(source: Path, overwrite: bool) -> int:
         artifact_id = parts[-3]
         group_id = ".".join(parts[:-3])
         dest_dir = version_dir(group_id, artifact_id, version)
-        if dest_dir.exists() and any(dest_dir.iterdir()) and not overwrite:
+        snapshot = is_snapshot(version)
+        if dest_dir.exists() and any(dest_dir.iterdir()) and not overwrite and not snapshot:
             print(f"skip  {group_id}:{artifact_id}:{version}")
             continue
         dest_dir.mkdir(parents=True, exist_ok=True)
@@ -71,6 +78,8 @@ def import_gradle_repo(source: Path, overwrite: bool) -> int:
                 shutil.copy2(src, dest_dir / src.name)
                 write_checksums(dest_dir / src.name)
                 count += 1
+        if snapshot:
+            uniquify_snapshot_dir(dest_dir, artifact_id, version)
         write_maven_metadata(group_id, artifact_id)
         print(f"imported {group_id}:{artifact_id}:{version}")
     return count

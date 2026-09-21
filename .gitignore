@@ -11,8 +11,7 @@ local.properties
 *.log
 .venv/
 
-# Gradle does not need these. Do not ignore repo/in/payu artifacts.
-/repo/index.html
+# Gradle does not need these. Do not ignore repo/in/payu artifacts or index.html listings.
 /repo/catalog.json
 /repo/dependency-graph.json
 /repo/dependency-graph.md
