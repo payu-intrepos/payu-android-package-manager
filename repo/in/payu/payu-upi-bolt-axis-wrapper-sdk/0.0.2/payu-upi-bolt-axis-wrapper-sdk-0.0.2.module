@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-upi-bolt-axis-wrapper-sdk",
+    "version": "0.0.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-upi-bolt-axis-wrapper-sdk-0.0.2.aar",
+          "url": "payu-upi-bolt-axis-wrapper-sdk-0.0.2.aar",
+          "size": 2086,
+          "sha512": "15ae680115a0c5c3ccd7b49c851ad5ad0cd6971d6cae04f8b2d5ef66383917d10ed175d925894ab04170609f75ba70994caf3790f5f7ca64d469dacf249f5404",
+          "sha256": "13d4719666f92d0bd7afb0882b3467d0e4d2698ee279f7a9df2e84458621e1ec",
+          "sha1": "59d5bbac12e320f3adf796d86e5e4cc75016a4be",
+          "md5": "d1e726ebd0bcec51ce0351744c253d6a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.10"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "2.9.0"
+          }
+        },
+        {
+          "group": "commons-logging",
+          "module": "commons-logging-api",
+          "version": {
+            "requires": "1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-upi-bolt-axis-wrapper-sdk-0.0.2.aar",
+          "url": "payu-upi-bolt-axis-wrapper-sdk-0.0.2.aar",
+          "size": 2086,
+          "sha512": "15ae680115a0c5c3ccd7b49c851ad5ad0cd6971d6cae04f8b2d5ef66383917d10ed175d925894ab04170609f75ba70994caf3790f5f7ca64d469dacf249f5404",
+          "sha256": "13d4719666f92d0bd7afb0882b3467d0e4d2698ee279f7a9df2e84458621e1ec",
+          "sha1": "59d5bbac12e320f3adf796d86e5e4cc75016a4be",
+          "md5": "d1e726ebd0bcec51ce0351744c253d6a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-upi-bolt-axis-wrapper-sdk-0.0.2-sources.jar",
+          "url": "payu-upi-bolt-axis-wrapper-sdk-0.0.2-sources.jar",
+          "size": 1295,
+          "sha512": "c2202c4ca797d8850dff1f4d4cab99618cd1b4fb46b49724904a79b6b0cd86fdb7c8da722f66c47031b74e6af504720ce725984eef95475bddb39c8e5abb22d7",
+          "sha256": "ebc7a630bf8af9b53aba2a0448716ca57fa677baecdb5410ca152fa2a8e31fba",
+          "sha1": "b1d9355095de60707538be6fdff8490fe80d2052",
+          "md5": "18a2d2181377b1cbe78b3d9808677352"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-upi-bolt-axis-wrapper-sdk-0.0.2-javadoc.jar",
+          "url": "payu-upi-bolt-axis-wrapper-sdk-0.0.2-javadoc.jar",
+          "size": 259695,
+          "sha512": "1559b48b6f505e53c18c5ef2ea1ed545bbc791ef77d9c2bdbc1eabf03ae342f9c6f35d1e62ac0a982b811c9d5906f333c4e347b8416aabfd05bb01542a0db70c",
+          "sha256": "e20f7e112b14772bedfe1583c77753716856ff37ddb0db0ea6b312029c721a5d",
+          "sha1": "b47ee8d0a6cb18f80c80f17a1864017f4fcb1eb4",
+          "md5": "669c2fba2a948ae5eab47cc66c0e6bdf"
+        }
+      ]
+    }
+  ]
+}

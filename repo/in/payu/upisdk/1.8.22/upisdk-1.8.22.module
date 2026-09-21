@@ -1,0 +1,158 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "upisdk",
+    "version": "1.8.22",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.10.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "upisdk-1.8.22.aar",
+          "url": "upisdk-1.8.22.aar",
+          "size": 160808,
+          "sha512": "f0dae42af9060a81dfab29761a68be874961545b0a033f33818d06a5349ad2c65b82ddc214e0fc4b8b04a7663c2507b7a61552fc4f9fe126cd193175680954cc",
+          "sha256": "f990d042273c12178892722e261f4e1e327c59ed99027adba7f25115ee118a73",
+          "sha1": "592e797701c7a9878ea20034cd74487f50265837",
+          "md5": "d63c54e7b74a0d9e6bcc75a5e2495648"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "16.0.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.1,1.2.0)"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-core-networking",
+          "version": {
+            "requires": "1.4.11"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.10.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "upisdk-1.8.22.aar",
+          "url": "upisdk-1.8.22.aar",
+          "size": 160808,
+          "sha512": "f0dae42af9060a81dfab29761a68be874961545b0a033f33818d06a5349ad2c65b82ddc214e0fc4b8b04a7663c2507b7a61552fc4f9fe126cd193175680954cc",
+          "sha256": "f990d042273c12178892722e261f4e1e327c59ed99027adba7f25115ee118a73",
+          "sha1": "592e797701c7a9878ea20034cd74487f50265837",
+          "md5": "d63c54e7b74a0d9e6bcc75a5e2495648"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "upisdk-1.8.22-sources.jar",
+          "url": "upisdk-1.8.22-sources.jar",
+          "size": 85630,
+          "sha512": "d8209ba2efb4f78f7ce89f8d0da09ff37e7318c22157a860428d9ee1aa69d596c4e65bf4b1ee17016975809e6499a640f6e02b6f6a117d908c49e67c1be15269",
+          "sha256": "c0e75aa780f89050003a0be9d472d270da2cde5e5db8b3be1c6b21a3300b4fe1",
+          "sha1": "71d2758c8ae5edff0b84937b9c36184f25c6a379",
+          "md5": "35fd1f703dbeff8f939e62cbbb2a4d37"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "upisdk-1.8.22-javadoc.jar",
+          "url": "upisdk-1.8.22-javadoc.jar",
+          "size": 560304,
+          "sha512": "5495d458ab0eba02012bf30598c8eca172f5aee41767f51d2f8e821218b329fef9d813a8fbde29faf979c2a2469c4a7914f57f1e34cd1f6a3a174cc6a077d61d",
+          "sha256": "ec2497578564f01f6ce616944efe64c77cf65d36194cb699bd21b246de30e6a3",
+          "sha1": "8090271b9f7fa0187dc9b9e275a51c48c0b5f08d",
+          "md5": "dfd211db9e0e96f9c1173a723005a977"
+        }
+      ]
+    }
+  ]
+}

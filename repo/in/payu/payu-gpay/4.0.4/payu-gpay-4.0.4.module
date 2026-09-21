@@ -1,0 +1,135 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-gpay",
+    "version": "4.0.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "payu-gpay-4.0.4.aar",
+          "url": "payu-gpay-4.0.4.aar",
+          "size": 65412,
+          "sha512": "4787df1528680592002701d1d9e959eaf9da6b26e81ac3ed1eb9d044132273ce598a955fb997b8974b222bc89d86423c8b127ce1b66eaf7f607334cde7cccc77",
+          "sha256": "7b6b7bec03e90d56bb120063b4ea46b2fe102fa9ab0e3ec3ce1a8409a91b1867",
+          "sha1": "23ed8d713684bc464990a1daf0a36dad9277525e",
+          "md5": "c568487580d38cb5228a83ef19de2641"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-tasks",
+          "version": {
+            "requires": "17.2.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.1,1.2.0)"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-core-networking",
+          "version": {
+            "requires": "1.4.11"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-gpay-4.0.4.aar",
+          "url": "payu-gpay-4.0.4.aar",
+          "size": 65412,
+          "sha512": "4787df1528680592002701d1d9e959eaf9da6b26e81ac3ed1eb9d044132273ce598a955fb997b8974b222bc89d86423c8b127ce1b66eaf7f607334cde7cccc77",
+          "sha256": "7b6b7bec03e90d56bb120063b4ea46b2fe102fa9ab0e3ec3ce1a8409a91b1867",
+          "sha1": "23ed8d713684bc464990a1daf0a36dad9277525e",
+          "md5": "c568487580d38cb5228a83ef19de2641"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-gpay-4.0.4-sources.jar",
+          "url": "payu-gpay-4.0.4-sources.jar",
+          "size": 32275,
+          "sha512": "5275acd66360e8b34ad6adeeec9b9f892323a0827d147a54b0cfcc7d4613cae0704dd41b72a6b9ac3ea148f88d6af5345e352742c607c74d799cb3be47c56b38",
+          "sha256": "fbe4ec7ab2e13ebfa585098832d5d5baab65f940b665c5ee2c16537b0f6ebf42",
+          "sha1": "fd420d656db2260c63270f11cc15fe93b0eb93a4",
+          "md5": "ae10d8fb5c986e93a48a4807a025ec88"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-gpay-4.0.4-javadoc.jar",
+          "url": "payu-gpay-4.0.4-javadoc.jar",
+          "size": 365926,
+          "sha512": "81c68e3a6f0877aa3f6a619cd1f187179b12c4baa5a0e93cdbb8020a6617991998516df8a8f59fc241461da7e0d2e925057403e0a6a280be365ad32762ebacc5",
+          "sha256": "36f187c59e55dd18319b370f9a5bd581df227a483c03e4974c8923680072c4bc",
+          "sha1": "11d3299f9c0b15a3cd8021be16d3838be52d1800",
+          "md5": "653c4f4dbf1a0a7a9c6d8c7a72ba8020"
+        }
+      ]
+    }
+  ]
+}

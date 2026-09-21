@@ -1,0 +1,142 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "native-otp-reader",
+    "version": "1.4.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "native-otp-reader-1.4.0.aar",
+          "url": "native-otp-reader-1.4.0.aar",
+          "size": 30156,
+          "sha512": "d44c7348b3a29eb44674e82f579bf01faa4fd3fc1ac69b4de32acdc5a7fec62e3343724eef942b2b1a3d5881cd331babbf3e90e739a205d087cae3660b101a09",
+          "sha256": "5cc92c0633edaeec2424b67b44ef5603f3aaa994148f8fd812aebb7f78273ee4",
+          "sha1": "b799d4a7d57e0561e2ba5a9d7042741cfa404fab",
+          "md5": "58dcadec9dfdffdf11e028f0d8ed6759"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-auth-api-phone",
+          "version": {
+            "requires": "18.0.1"
+          }
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common-java8",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "native-otp-reader-1.4.0.aar",
+          "url": "native-otp-reader-1.4.0.aar",
+          "size": 30156,
+          "sha512": "d44c7348b3a29eb44674e82f579bf01faa4fd3fc1ac69b4de32acdc5a7fec62e3343724eef942b2b1a3d5881cd331babbf3e90e739a205d087cae3660b101a09",
+          "sha256": "5cc92c0633edaeec2424b67b44ef5603f3aaa994148f8fd812aebb7f78273ee4",
+          "sha1": "b799d4a7d57e0561e2ba5a9d7042741cfa404fab",
+          "md5": "58dcadec9dfdffdf11e028f0d8ed6759"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "native-otp-reader-1.4.0-sources.jar",
+          "url": "native-otp-reader-1.4.0-sources.jar",
+          "size": 8657,
+          "sha512": "02d00f20025d98945b84088f9ac055e03671e5a902feb3f2a787dd10ffb1e1fcd1412ba6b6af5bc6f1d33b29355dd102a919053d2dac38559e24e5ab269601dd",
+          "sha256": "5331bcb30b51bd954fe280e70c029e4c80a29d13694c9fcd4f1d94579bf1a50b",
+          "sha1": "9a70f23afbb0e6be9ec7e9b86f1ff574ffd60fa2",
+          "md5": "d7005d702ab4d550660b26d3e9c09e2e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "native-otp-reader-1.4.0-javadoc.jar",
+          "url": "native-otp-reader-1.4.0-javadoc.jar",
+          "size": 325248,
+          "sha512": "50e2babf27d39ce16b5201cd9a6a74c939478ff4193f7d31732f8dca64a3c67dc123a217a4237213601245ea8433c65d8f68b7f8a64f108d864cdb25059dcf40",
+          "sha256": "bfaffa7d2a9d391af1c46ba6bba4847af05c8ec297c1940fc275e99f07d12637",
+          "sha1": "f8e31f1413fe9d86f71614b526ff80bcf4d7ab28",
+          "md5": "355b71f552731cc96ac22486b3461749"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-asset-library-android",
+    "version": "1.8.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "payu-asset-library-android-1.8.1.aar",
+          "url": "payu-asset-library-android-1.8.1.aar",
+          "size": 503870,
+          "sha512": "dec640306d26f3439c50c43036a619fbd717563eaecef575aad28bbabea146ff362f6b5a599c964d1744365de1787cc06e04b0cdd94daeed0d31cf323124259f",
+          "sha256": "1080c2deb363175adf306351be67907ac5875d117a9013afb508f81bda9c6ffd",
+          "sha1": "f28d814ee6c5f62240e0a61f7b8ff40861819b04",
+          "md5": "a3a3da6fe6783176e3e45e3f6e1937c3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-asset-library-android-1.8.1.aar",
+          "url": "payu-asset-library-android-1.8.1.aar",
+          "size": 503870,
+          "sha512": "dec640306d26f3439c50c43036a619fbd717563eaecef575aad28bbabea146ff362f6b5a599c964d1744365de1787cc06e04b0cdd94daeed0d31cf323124259f",
+          "sha256": "1080c2deb363175adf306351be67907ac5875d117a9013afb508f81bda9c6ffd",
+          "sha1": "f28d814ee6c5f62240e0a61f7b8ff40861819b04",
+          "md5": "a3a3da6fe6783176e3e45e3f6e1937c3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-asset-library-android-1.8.1-sources.jar",
+          "url": "payu-asset-library-android-1.8.1-sources.jar",
+          "size": 108260,
+          "sha512": "7f6c878485e35dbd536af06f791d76626c56bad4aab9679f14f2ca56d80652db865cf8d7f1a8992075b0ce228f0b80f20a0e075d0722e2332f855ec11c120145",
+          "sha256": "2c3148f024dc391f4920c577caab4b2f97a112dd8a28affb530d0de26bfc765c",
+          "sha1": "d5d46fb54af5bfde271bec9a2a1fd0a4619ccd5b",
+          "md5": "e8a59ad00e44939ddc9b236622956f5b"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-asset-library-android-1.8.1-javadoc.jar",
+          "url": "payu-asset-library-android-1.8.1-javadoc.jar",
+          "size": 422490,
+          "sha512": "c4923fe74827b7a7313c61ff88398e089dc884d4d15e0a6c951c1ad6b7c739cef4e4339459487787be74c75b99647855708d77eac79e74d847737d179577c5ac",
+          "sha256": "146ad4ca3d64a7de0dfbf4a500f0ab522d36f3f269f3b83ff06c051aef91cd8f",
+          "sha1": "befa38d1ac4bae4572525ec0ff0f577b6a2cc2c9",
+          "md5": "ce1849ab7b491287e3c6228f851c0c98"
+        }
+      ]
+    }
+  ]
+}

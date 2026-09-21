@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-cp-encryption-wrapper",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-cp-encryption-wrapper-1.0.1.aar",
+          "url": "payu-cp-encryption-wrapper-1.0.1.aar",
+          "size": 71952,
+          "sha512": "349bb1ed474ea7493434e8c63326eddb5ff88cc68d2a18906cb5db436a5afbc99bb046f6a3417959f7dc9cddc3a46d05dfa180cdac4e58f855da3325ffb684e1",
+          "sha256": "200371ba93bfb1751c4bb9db7114969f5c3608b3a19bdbdf226e89b84ccfd2e7",
+          "sha1": "e17ff1bba0ca85437c7acde191e2635617a720ba",
+          "md5": "9687e2f82aafc795ed382517a35d6b8a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.15.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-checkout-pro",
+          "version": {
+            "requires": "3.3.3"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-sdk",
+          "version": {
+            "requires": "7.12.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-cp-encryption-wrapper-1.0.1.aar",
+          "url": "payu-cp-encryption-wrapper-1.0.1.aar",
+          "size": 71952,
+          "sha512": "349bb1ed474ea7493434e8c63326eddb5ff88cc68d2a18906cb5db436a5afbc99bb046f6a3417959f7dc9cddc3a46d05dfa180cdac4e58f855da3325ffb684e1",
+          "sha256": "200371ba93bfb1751c4bb9db7114969f5c3608b3a19bdbdf226e89b84ccfd2e7",
+          "sha1": "e17ff1bba0ca85437c7acde191e2635617a720ba",
+          "md5": "9687e2f82aafc795ed382517a35d6b8a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-cp-encryption-wrapper-1.0.1-sources.jar",
+          "url": "payu-cp-encryption-wrapper-1.0.1-sources.jar",
+          "size": 12570,
+          "sha512": "de8257ec632cadce226c2bf6ea0573f02281bd3e0305ca10a9b829d980e8cd11e6de7501b1e0cec6a6cab5d12e151ddbc2499a168f31f7bf848d03e045ddf035",
+          "sha256": "a327d639f10b55d08c70f9624ab45c36c1111c90dfdd8557f570b8abc52eb027",
+          "sha1": "04a4c506517a7e35c85c810e9946413e045c9c6f",
+          "md5": "285452bce1bcae653df392cd878b9089"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-cp-encryption-wrapper-1.0.1-javadoc.jar",
+          "url": "payu-cp-encryption-wrapper-1.0.1-javadoc.jar",
+          "size": 332228,
+          "sha512": "3fb4f7ecb85f8fbe5eee07abe5c1b5a33962a0723b1601081710312d9a7e1563271dd3ee76c3fe4755530358911d0c6821911d62f1e8ffd49f92881c5f178b54",
+          "sha256": "cda4e489a4aeec67179b487f6fa84a7d08ef0c956ca1054ff3ca440e86d9e85b",
+          "sha1": "47f55b1a5889b1b611150ee898c3cf96122f91ed",
+          "md5": "1dedc43347cf5834ed333a576bd7974e"
+        }
+      ]
+    }
+  ]
+}

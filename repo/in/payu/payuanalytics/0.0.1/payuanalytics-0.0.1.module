@@ -1,0 +1,151 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payuanalytics",
+    "version": "0.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payuanalytics-0.0.1.aar",
+          "url": "payuanalytics-0.0.1.aar",
+          "size": 51854,
+          "sha512": "43e92815d6a7f947646a48d10a1c5a2ae3749fe92c3db4335128697cbd80bbd6f390093b51dc762a0e9d5f6f771ace71ed725181f48855401040ea80cc21fbb2",
+          "sha256": "647dfb85ace35715f6bc9209c4a67e7c9f6e96c3cbbfa700e1238a23cd97fb03",
+          "sha1": "307e23564cf16216198de6c582dc0689670014bf",
+          "md5": "af5e0312943df2c742e607bacc1bee1b"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payuanalytics-0.0.1.aar",
+          "url": "payuanalytics-0.0.1.aar",
+          "size": 51854,
+          "sha512": "43e92815d6a7f947646a48d10a1c5a2ae3749fe92c3db4335128697cbd80bbd6f390093b51dc762a0e9d5f6f771ace71ed725181f48855401040ea80cc21fbb2",
+          "sha256": "647dfb85ace35715f6bc9209c4a67e7c9f6e96c3cbbfa700e1238a23cd97fb03",
+          "sha1": "307e23564cf16216198de6c582dc0689670014bf",
+          "md5": "af5e0312943df2c742e607bacc1bee1b"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payuanalytics-0.0.1-sources.jar",
+          "url": "payuanalytics-0.0.1-sources.jar",
+          "size": 18434,
+          "sha512": "e08135a924fc906e3f884a93381a5dda4666be7ee52429408fbdcbe867f91ade7efcc40d0bc5c2ddfeeb149c6ece84c00cf70182d295ef35a54029ae776a0a16",
+          "sha256": "5c43e95a0c4781909ea02069c2b7aa591af575372f48d127e633e361feb538b6",
+          "sha1": "aadbda352a1b330e1ca58cfe096b0f8c99102814",
+          "md5": "4b4547473d9f78b4d7bab2eaea61e896"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payuanalytics-0.0.1-javadoc.jar",
+          "url": "payuanalytics-0.0.1-javadoc.jar",
+          "size": 356420,
+          "sha512": "02d10328e48b776204d29f1073ce04ee94d3c81761021aee2eeac7cc216b2dc6180b04c922d737294db75724ff70fec06183763fee9bbbcc96f3ecc44211e325",
+          "sha256": "0b0e0957d4ff4c483efc47b275ac8a0a467b07c6f75310ea2762d59ab393ea8d",
+          "sha1": "6a7ea0cd463129f6612114db238559699da12e89",
+          "md5": "e9c814010bdd7523e8fcc0dd2c59b525"
+        }
+      ]
+    }
+  ]
+}

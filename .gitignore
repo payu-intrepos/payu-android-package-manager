@@ -1,0 +1,18 @@
+.DS_Store
+.idea/
+.vscode/
+*.iml
+__pycache__/
+*.pyc
+.pytest_cache/
+.gradle/
+build/
+local.properties
+*.log
+.venv/
+
+# Gradle does not need these. Do not ignore repo/in/payu artifacts.
+/repo/index.html
+/repo/catalog.json
+/repo/dependency-graph.json
+/repo/dependency-graph.md

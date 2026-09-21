@@ -1,0 +1,135 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "phonepe-intent",
+    "version": "1.8.11",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "phonepe-intent-1.8.11.aar",
+          "url": "phonepe-intent-1.8.11.aar",
+          "size": 46255,
+          "sha512": "86f2aab443d30f33dc4e78144571017dc85347b433dfcb9ec8fe30d156441d8259b523a69af12cab58a079f6b19cff0aa1cf50116a22116dbf7ed50d0ff7633a",
+          "sha256": "83565e4b75909b22532a5d0d6ac3f37250bf62eab274778659676fbefaa10eb8",
+          "sha1": "a01d92173b08f8555b5ffad68aa3518d41391c31",
+          "md5": "3011aae427264c4455c69695f68d7108"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "phonepe.intentsdk.android.release",
+          "module": "IntentSDK",
+          "version": {
+            "requires": "1.8.4"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-core-networking",
+          "version": {
+            "requires": "1.4.11"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.1,1.2.0)"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "phonepe-intent-1.8.11.aar",
+          "url": "phonepe-intent-1.8.11.aar",
+          "size": 46255,
+          "sha512": "86f2aab443d30f33dc4e78144571017dc85347b433dfcb9ec8fe30d156441d8259b523a69af12cab58a079f6b19cff0aa1cf50116a22116dbf7ed50d0ff7633a",
+          "sha256": "83565e4b75909b22532a5d0d6ac3f37250bf62eab274778659676fbefaa10eb8",
+          "sha1": "a01d92173b08f8555b5ffad68aa3518d41391c31",
+          "md5": "3011aae427264c4455c69695f68d7108"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "phonepe-intent-1.8.11-sources.jar",
+          "url": "phonepe-intent-1.8.11-sources.jar",
+          "size": 19074,
+          "sha512": "db2fbcf6411f2586001c4c669ae9579d02c44c7760ca26e485613e67b4516cc14b2324204dc3801df59f31fb708b131d4fc2ab9c50d223c81ca3c229e50aab3d",
+          "sha256": "561520ed92ed0bb028762f054a19456819c58ef6557689c1aa382669380665db",
+          "sha1": "ba21f270c9d2b535a953927f956377fb3124871b",
+          "md5": "5fdf6039db7628ce775ca5a4c297063f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "phonepe-intent-1.8.11-javadoc.jar",
+          "url": "phonepe-intent-1.8.11-javadoc.jar",
+          "size": 350360,
+          "sha512": "b6423d81bdb48ce3585f8b81fcf2d5888571af3fbc368f03ba6046cff00ebec84d0a0d3a1e6e25ee0b3b0b40e7eed4f8efed2dc9bbaa4ffd1f230727c9fa6c5f",
+          "sha256": "2f7da4258c6415097dc9a3c4752a11429f50d727d1ea4f9e14862c03a91d8973",
+          "sha1": "a06d1132da4a83845e0fc2d821f2581dc8f1e23f",
+          "md5": "709de0db10ba089e5b886548404485dc"
+        }
+      ]
+    }
+  ]
+}

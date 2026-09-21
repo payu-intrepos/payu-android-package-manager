@@ -1,0 +1,98 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "paymentparamhelper",
+    "version": "2.11.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "paymentparamhelper-2.11.0.aar",
+          "url": "paymentparamhelper-2.11.0.aar",
+          "size": 85528,
+          "sha512": "130869a939fe050849fca2f740f96366f5aaa2c412348908ed3c1bf792c9170b2df9e6ced0889ad2bb7d173bd6f05ab26da43509cc58eb6752070b9c19f110e7",
+          "sha256": "f150ec1929c7229a0cdf35faa9d7f9e0e4b8573b007652d3bf90f38f68abfffc",
+          "sha1": "a61492bb1dd5b8a1bc290009f821da57750f0377",
+          "md5": "e181b4efc53edf8d988dc2f0ad6d6e40"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "paymentparamhelper-2.11.0.aar",
+          "url": "paymentparamhelper-2.11.0.aar",
+          "size": 85528,
+          "sha512": "130869a939fe050849fca2f740f96366f5aaa2c412348908ed3c1bf792c9170b2df9e6ced0889ad2bb7d173bd6f05ab26da43509cc58eb6752070b9c19f110e7",
+          "sha256": "f150ec1929c7229a0cdf35faa9d7f9e0e4b8573b007652d3bf90f38f68abfffc",
+          "sha1": "a61492bb1dd5b8a1bc290009f821da57750f0377",
+          "md5": "e181b4efc53edf8d988dc2f0ad6d6e40"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "paymentparamhelper-2.11.0-sources.jar",
+          "url": "paymentparamhelper-2.11.0-sources.jar",
+          "size": 55635,
+          "sha512": "3b1a5ab9e6f4c1f8fd4e87b40a26e21fbcbf8a2132a79e679ec9cc2a59a0edcb1e8bccddd7d4032d8acc3a7443ce99f331239f09d03391968f437c6647cfab9b",
+          "sha256": "c7ed3aca06b2e2e2b9c861cc8cf1b4323a91adaabf919284d3f1f98b1909b9cc",
+          "sha1": "4b1802e38e1d60f24951d55e414f0209b3fc9b8f",
+          "md5": "4ce455c90bf92b455e768e61ae7365e3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "paymentparamhelper-2.11.0-javadoc.jar",
+          "url": "paymentparamhelper-2.11.0-javadoc.jar",
+          "size": 452233,
+          "sha512": "5aecffe9fe6aa151ff5f2a2c401f70eedc91a096f71c4b610047fc3125c7039a195ce3c7a5e3476e81638f7884e287952990d0f30098348c19933eaa00760795",
+          "sha256": "65d2794e9a493d27e5741e417fd5e0396b533957fd03802dc19c0838e0bc8bfb",
+          "sha1": "1dfa918d1c833c6850b9be96e265aff2a51fdfb2",
+          "md5": "d4bcbaeb69fc229844c056e8437dfd04"
+        }
+      ]
+    }
+  ]
+}

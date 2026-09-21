@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>in.payu</groupId>
+  <artifactId>payuanalytics</artifactId>
+  <version>1.5.3</version>
+  <packaging>aar</packaging>
+  <name>payuanalytics</name>
+  <description>Analytics SDK for PayU Android.</description>
+  <url>https://github.com/payu-intrepos/payu-mob-analytics</url>
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>mobile_payu</id>
+      <name>PayU Mobile</name>
+      <email>payumoneyapp@payumoney.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <url>https://github.com/payu-intrepos/payu-mob-analytics</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <artifactId>okhttp</artifactId>
+      <groupId>com.squareup.okhttp3</groupId>
+      <version>4.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <artifactId>logging-interceptor</artifactId>
+      <groupId>com.squareup.okhttp3</groupId>
+      <version>4.9.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <artifactId>kotlin-stdlib-jdk7</artifactId>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <version>1.6.10</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <artifactId>appcompat</artifactId>
+      <groupId>androidx.appcompat</groupId>
+      <version>1.6.1</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <artifactId>core-ktx</artifactId>
+      <groupId>androidx.core</groupId>
+      <version>1.5.0</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>

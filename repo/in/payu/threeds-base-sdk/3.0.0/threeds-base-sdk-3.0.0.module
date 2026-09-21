@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "threeds-base-sdk",
+    "version": "3.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "threeds-base-sdk-3.0.0.aar",
+          "url": "threeds-base-sdk-3.0.0.aar",
+          "size": 65988,
+          "sha512": "985f2348160b73ebfcc38b80b8773c119a2cd1e06c145e5052e977f91cfe3924a8c457ebc75c389b89d862363ca42bc6a1937bbd65a63d1c2f5b617f03c20fed",
+          "sha256": "f1d62f8a15dc5de530c3c32ead2c392735acdc2439e2ee1b92bc34b345c2affc",
+          "sha1": "f0a46d22c2f753ecc559ed5f0a65dbeb27dd3d92",
+          "md5": "16b207a3295f9e64e289344051973a9d"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "threeds-base-sdk-3.0.0.aar",
+          "url": "threeds-base-sdk-3.0.0.aar",
+          "size": 65988,
+          "sha512": "985f2348160b73ebfcc38b80b8773c119a2cd1e06c145e5052e977f91cfe3924a8c457ebc75c389b89d862363ca42bc6a1937bbd65a63d1c2f5b617f03c20fed",
+          "sha256": "f1d62f8a15dc5de530c3c32ead2c392735acdc2439e2ee1b92bc34b345c2affc",
+          "sha1": "f0a46d22c2f753ecc559ed5f0a65dbeb27dd3d92",
+          "md5": "16b207a3295f9e64e289344051973a9d"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "threeds-base-sdk-3.0.0-sources.jar",
+          "url": "threeds-base-sdk-3.0.0-sources.jar",
+          "size": 21412,
+          "sha512": "23bbd7c18504cd2bfa6d1db191d0c1565f01941c4e99ba4a01834f00b6a087e894a2d9a7a65e41ab69caf3f6fb4570900032882505800334dc871bd32d7cd4b4",
+          "sha256": "063d9224f7121b3fe222cca8892a96defa3222062f315cece4ef4d3f907302b0",
+          "sha1": "58153b044ee7ab319a33a975612240773996bd9f",
+          "md5": "1357fd255560a4131ef7f48a287050ce"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "threeds-base-sdk-3.0.0-javadoc.jar",
+          "url": "threeds-base-sdk-3.0.0-javadoc.jar",
+          "size": 493908,
+          "sha512": "3e63fa220651500a99c4b2d32b612a46c02dadd0c36f207165632c46b508191375c480973cf9a27d154529b44f00bf7efdf380d112d9b27c9537b8e71c778335",
+          "sha256": "ff948a76aa3c18fd74a41fd7f9c25e6ee2cbaa9b11e8a2ed5f45d646942ba7fc",
+          "sha1": "d7a14248ebafc4aa1d0842c70ad814b67c3e5fc9",
+          "md5": "dee19c0c57eea98d56fc170b14edf94f"
+        }
+      ]
+    }
+  ]
+}

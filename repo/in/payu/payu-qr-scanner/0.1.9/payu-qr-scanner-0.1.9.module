@@ -1,0 +1,249 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-qr-scanner",
+    "version": "0.1.9",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.6.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-qr-scanner-0.1.9.aar",
+          "url": "payu-qr-scanner-0.1.9.aar",
+          "size": 124081,
+          "sha512": "1139a3ebccfae6d9592a0946677a388f99e8105e9ca08783e268ff45fac6adc2798da28d4ecda52fac79e40150a59699e3d7763f3f071afb4b005a364bd880cc",
+          "sha256": "2b276daed5f0b945ec78dd7293046000238d0343b61587749933196f9994c5e3",
+          "sha1": "fc2ea7462dd1c6adbce40fe91c3abc49192ff5f3",
+          "md5": "3bf0b0d5cf30c1eb4980992388845196"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-android-extensions-runtime",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.1.4"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-mlkit-barcode-scanning",
+          "version": {
+            "requires": "18.0.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-vision",
+          "version": {
+            "requires": "20.1.3"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-mlkit-text-recognition",
+          "version": {
+            "requires": "18.0.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.1,1.2.0)"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-asset-library-android",
+          "version": {
+            "requires": "1.8.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-qr-scanner-0.1.9.aar",
+          "url": "payu-qr-scanner-0.1.9.aar",
+          "size": 124081,
+          "sha512": "1139a3ebccfae6d9592a0946677a388f99e8105e9ca08783e268ff45fac6adc2798da28d4ecda52fac79e40150a59699e3d7763f3f071afb4b005a364bd880cc",
+          "sha256": "2b276daed5f0b945ec78dd7293046000238d0343b61587749933196f9994c5e3",
+          "sha1": "fc2ea7462dd1c6adbce40fe91c3abc49192ff5f3",
+          "md5": "3bf0b0d5cf30c1eb4980992388845196"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-qr-scanner-0.1.9-sources.jar",
+          "url": "payu-qr-scanner-0.1.9-sources.jar",
+          "size": 33442,
+          "sha512": "6f652d10b58773baf31211ddb9e81f85ede958f629c2424c641320ef0e7e2a1fcf42a2264d325c267c0d62a338aad9c13b44dbeb4d9f5c58c1849acfe4311699",
+          "sha256": "d9e153ed75a94c6140755a59fdd80c1ddefb98d7f037cbddf4f0f9d824219144",
+          "sha1": "5d0b89391d4fdc898aab5c744f00fc03b87668b9",
+          "md5": "9740ebad7513807515e17ef4600c9017"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-qr-scanner-0.1.9-javadoc.jar",
+          "url": "payu-qr-scanner-0.1.9-javadoc.jar",
+          "size": 498866,
+          "sha512": "e4ffcc598a34d3d5cda36a3d37b3214f483719826ad5caad326b4d5670cd259c80ac770778ea1709156ca8e9e5d64dc39f2c4bdca16417a009873ea9ed233e65",
+          "sha256": "cc4fca0d5331aca48d47bc0ac868afe6a7a8594401cdd0b0289c718a6d3d071e",
+          "sha1": "bbe03ac6796ab994aeb2765804b3956b6a2a56fa",
+          "md5": "cfe094fd773eaebfed5d0b1b0735037f"
+        }
+      ]
+    }
+  ]
+}

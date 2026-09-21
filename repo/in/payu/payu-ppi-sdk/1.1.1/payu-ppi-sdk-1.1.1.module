@@ -1,0 +1,142 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-ppi-sdk",
+    "version": "1.1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "payu-ppi-sdk-1.1.1.aar",
+          "url": "payu-ppi-sdk-1.1.1.aar",
+          "size": 73647,
+          "sha512": "e96d009f38aa132814d496d6c50d61b2b4fcc9fa2f05f2d70f21d555195721dd208e1609854eee38672b84564decb61047f8e48d350851f9cb460beee6b40925",
+          "sha256": "cf42fd1d83ab129456b1d973e32f82d05fb43787ca33f028d4d9250599c9f2a4",
+          "sha1": "8dcb59bf2d4522432c39a30abd00b78a1745ff26",
+          "md5": "23f60b798661bb655845523b05a8c64a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.0, 1.2.0]"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.0.4"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.5.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-ppi-sdk-1.1.1.aar",
+          "url": "payu-ppi-sdk-1.1.1.aar",
+          "size": 73647,
+          "sha512": "e96d009f38aa132814d496d6c50d61b2b4fcc9fa2f05f2d70f21d555195721dd208e1609854eee38672b84564decb61047f8e48d350851f9cb460beee6b40925",
+          "sha256": "cf42fd1d83ab129456b1d973e32f82d05fb43787ca33f028d4d9250599c9f2a4",
+          "sha1": "8dcb59bf2d4522432c39a30abd00b78a1745ff26",
+          "md5": "23f60b798661bb655845523b05a8c64a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-ppi-sdk-1.1.1-sources.jar",
+          "url": "payu-ppi-sdk-1.1.1-sources.jar",
+          "size": 26854,
+          "sha512": "7c031bc0654ec582c70aae27e71a76c5817e7105122548ea9c5cb2150cffdaa14d3fde8fb2653db6688b3d7044efb17e11db72e52fd591dc5c57c959f9a1863c",
+          "sha256": "6027ea725b1f491565e49fd83414daa684969340ad748a7ed49990dff47d2960",
+          "sha1": "36a795bbdf5b8921e424f7f128add668774ab4f8",
+          "md5": "9ace56e30575bfff5d6be2c5b9377ffd"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-ppi-sdk-1.1.1-javadoc.jar",
+          "url": "payu-ppi-sdk-1.1.1-javadoc.jar",
+          "size": 417279,
+          "sha512": "ed26b58297ff0b1d547ab1cb400a5233dec186659ac44a9a685fa1ce6548dbab3e6c7bbb341e2e09d6c85be972816729372a08986fea27e28937d49c6e28e331",
+          "sha256": "1c61f087892a2e8270318e7985c7263a989b6ba87edea94b92baeff23d2e6265",
+          "sha1": "468f578990e907187c6a1cc701df7b91c389ddec",
+          "md5": "73954d018be050aeeb517f3a93525c33"
+        }
+      ]
+    }
+  ]
+}

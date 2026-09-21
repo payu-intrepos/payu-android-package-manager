@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-sdk",
+    "version": "7.12.9",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.10.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-sdk-7.12.9.aar",
+          "url": "payu-sdk-7.12.9.aar",
+          "size": 429946,
+          "sha512": "041851ead8527ce8b2dbde465c0b2ac5f961daebba1bdecfc124387df9e2359d17934ffdcee61538234b6bf8da49e84ba409caea06b6f5a0a3a9d923efe1dd3f",
+          "sha256": "b4ca3a5cbd5197756e37927aa71883014bda6edcb79f09ab4ba70eafa4a82d34",
+          "sha1": "5962146ef60b0d4e3c7f8cbe02ca50a03e48ca43",
+          "md5": "90cf441aed2a48d8d10c1f9da9abbcd2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.1,1.2.0)"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.10.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-sdk-7.12.9.aar",
+          "url": "payu-sdk-7.12.9.aar",
+          "size": 429946,
+          "sha512": "041851ead8527ce8b2dbde465c0b2ac5f961daebba1bdecfc124387df9e2359d17934ffdcee61538234b6bf8da49e84ba409caea06b6f5a0a3a9d923efe1dd3f",
+          "sha256": "b4ca3a5cbd5197756e37927aa71883014bda6edcb79f09ab4ba70eafa4a82d34",
+          "sha1": "5962146ef60b0d4e3c7f8cbe02ca50a03e48ca43",
+          "md5": "90cf441aed2a48d8d10c1f9da9abbcd2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-sdk-7.12.9-sources.jar",
+          "url": "payu-sdk-7.12.9-sources.jar",
+          "size": 271111,
+          "sha512": "a8b02b0bddaa10d0355490d194b4888f07981a60f2d5dc810b26f377965aa7be9c74da58e22603b7f566cd79573f50d6013759019c6821c88d7fce075c89b075",
+          "sha256": "a034135da0b32f9c81a07f34b3086d8b7680fd2b1bdcd865c90de2e758ec8631",
+          "sha1": "8f3603640bd38abbda3a1df3726730e65ae103e6",
+          "md5": "71ee87d37e26c7ac7aaebe0d7b94110f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-sdk-7.12.9-javadoc.jar",
+          "url": "payu-sdk-7.12.9-javadoc.jar",
+          "size": 1177666,
+          "sha512": "a8543af6df5a09a53ee9a5acd1570bf39a30c036f73cd86d4004f5567aa187dcf69fafdc4489973629a826163df3aaea391bfd340767769a1a6ecddae987b5b9",
+          "sha256": "f1217f469799833756110cc612af5b4048b692ad9c0a6641099ce0ee7f3c991d",
+          "sha1": "5490267f9cfa40049dcbc753ad175a793b9fa4bd",
+          "md5": "32d556f998aa06cc3fa64e9a9aaa296b"
+        }
+      ]
+    }
+  ]
+}

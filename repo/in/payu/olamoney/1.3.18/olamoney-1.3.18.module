@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "olamoney",
+    "version": "1.3.18",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.10.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "olamoney-1.3.18.aar",
+          "url": "olamoney-1.3.18.aar",
+          "size": 23257,
+          "sha512": "fda23d1e7740e144da91a19a5829cb05b40ea8298300e0b5c5a1246f22adcadc753b78b1101fe5b45ea859efb64e334089f01d0f7a36c9cdc8c732f1416dc4ce",
+          "sha256": "bb9286d7a69f77fb4c90a4f0207f67de53e37da2cc5ffaf912dbceb2b4aa39cd",
+          "sha1": "ad65e90c9f606080e826e9d5bb33db2aaa5e72dd",
+          "md5": "0cc5ff5660a2c49372a36c6f2c81fc03"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-core-networking",
+          "version": {
+            "requires": "1.4.11"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.10.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "olamoney-1.3.18.aar",
+          "url": "olamoney-1.3.18.aar",
+          "size": 23257,
+          "sha512": "fda23d1e7740e144da91a19a5829cb05b40ea8298300e0b5c5a1246f22adcadc753b78b1101fe5b45ea859efb64e334089f01d0f7a36c9cdc8c732f1416dc4ce",
+          "sha256": "bb9286d7a69f77fb4c90a4f0207f67de53e37da2cc5ffaf912dbceb2b4aa39cd",
+          "sha1": "ad65e90c9f606080e826e9d5bb33db2aaa5e72dd",
+          "md5": "0cc5ff5660a2c49372a36c6f2c81fc03"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "olamoney-1.3.18-sources.jar",
+          "url": "olamoney-1.3.18-sources.jar",
+          "size": 8035,
+          "sha512": "b39cb9fe096710f242e04c0c1d7dcb2d171f70d9733577e982ad8689cfa43d4b7721f4dd3a8235630f87623ee115447f5e45d0efdcf528574dd9e44148dcc0bf",
+          "sha256": "c7807f30af6af69d8db3193bbd9e460efd9f6b1a063c2e18f585c04db247c7e0",
+          "sha1": "230c9c11d9f044556c4f4ada098ec3b12686a664",
+          "md5": "844133a55a06d38ff0c630068c62d200"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "olamoney-1.3.18-javadoc.jar",
+          "url": "olamoney-1.3.18-javadoc.jar",
+          "size": 303999,
+          "sha512": "7575b5d40575fcb564ff18facca3c6159252073bdade382d1390fb381342ce1abcbff11519c974fc0c9f6e779ee5f1b8fa675efcba322094182837ba64661597",
+          "sha256": "ccf5c85aa8f152a05005294c176afea53829091c0e00b10d69db5ec780659c44",
+          "sha1": "e661a774a15d381db9904e424820ebee5e76be9b",
+          "md5": "53119ae5c27aa5e763bf8f9e6d9cf5b5"
+        }
+      ]
+    }
+  ]
+}

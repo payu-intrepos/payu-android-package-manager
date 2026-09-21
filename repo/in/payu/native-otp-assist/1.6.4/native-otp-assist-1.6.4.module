@@ -1,0 +1,163 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "native-otp-assist",
+    "version": "1.6.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "native-otp-assist-1.6.4.aar",
+          "url": "native-otp-assist-1.6.4.aar",
+          "size": 170895,
+          "sha512": "2c9c5db7a0a633912184b1aecbff684bc40dd6b1e2a3c075f8ab2fe69384ed708a163a77d5cc696714e4584f39d42ac6538d42b46ce66bc2086da2b8fedf77f7",
+          "sha256": "a47c4171a6cdb2272da4a2e228c90d34f6950f06cdf36630d1f58e10788e3672",
+          "sha1": "0ca17aa46613fbdacbe61ff837422a9ae7734c09",
+          "md5": "bbddd4a657f029ad6e2845d33020846e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.browser",
+          "module": "browser",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.1,1.2.0)"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "native-otp-reader",
+          "version": {
+            "requires": "1.4.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "native-otp-assist-1.6.4.aar",
+          "url": "native-otp-assist-1.6.4.aar",
+          "size": 170895,
+          "sha512": "2c9c5db7a0a633912184b1aecbff684bc40dd6b1e2a3c075f8ab2fe69384ed708a163a77d5cc696714e4584f39d42ac6538d42b46ce66bc2086da2b8fedf77f7",
+          "sha256": "a47c4171a6cdb2272da4a2e228c90d34f6950f06cdf36630d1f58e10788e3672",
+          "sha1": "0ca17aa46613fbdacbe61ff837422a9ae7734c09",
+          "md5": "bbddd4a657f029ad6e2845d33020846e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "native-otp-assist-1.6.4-sources.jar",
+          "url": "native-otp-assist-1.6.4-sources.jar",
+          "size": 48918,
+          "sha512": "54c482f617f53254c548ef7af3af82dbd0d8dbe4ffe7c5d2342e9d9b80ec6b88913acf02e6b6d745ca1f797d4dac3695015581bf8f7d9c20f211079fcb07b8c0",
+          "sha256": "dc18b35160d6ab846396a85b07ac47b7594803ca6fe8ae77cf5d8d361af04342",
+          "sha1": "ff06ed644c26dd933a3088d053edef9d3a992b50",
+          "md5": "6af3d319027758bd12a945f36e3d8dd6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "native-otp-assist-1.6.4-javadoc.jar",
+          "url": "native-otp-assist-1.6.4-javadoc.jar",
+          "size": 543781,
+          "sha512": "6f4d2e5b34d94d6d64f3d8993988f3d97141b65c521cac48546718a0c91cf6b43b190716b5e1538bf3476764dcb6e6c14fb9ad3e5e262fa96fc1ca0bfa720c2c",
+          "sha256": "e5341389b3765d608dca7c34d3fcdaffe34c56c7d64d45c034b2029b99b777b5",
+          "sha1": "b84b0a2b42685df72178db928c6efe60d00e9ee3",
+          "md5": "3938e310136106a1635ca8a592c5c191"
+        }
+      ]
+    }
+  ]
+}

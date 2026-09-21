@@ -1,0 +1,206 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-checkout-pro",
+    "version": "3.3.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "payu-custom-browser",
+          "version": {
+            "requires": "7.16.3"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-checkout-pro-ui",
+          "version": {
+            "requires": "1.23.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-checkout-pro-3.3.3.aar",
+          "url": "payu-checkout-pro-3.3.3.aar",
+          "size": 358332,
+          "sha512": "ce7293094f4cf76d90490dec4feb109028a6e82d0d697ec9e344dabea02426392e6f4fc38e5554d4636c280fba4248db0937345ca55d6d982136bfef4aa7fdd5",
+          "sha256": "5e8d16dbb0f695d8c7d5d7cfef64a8de38ffde8b99fea998938965275b584245",
+          "sha1": "a255feeb71da30374ce030760a16a858ff14cee9",
+          "md5": "62b9a2221b103737ba1020533592e765"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "payu-custom-browser",
+          "version": {
+            "requires": "7.16.3"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-checkout-pro-ui",
+          "version": {
+            "requires": "1.23.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-base",
+          "version": {
+            "requires": "18.5.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-gpay",
+          "version": {
+            "requires": "4.0.1"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-sdk",
+          "version": {
+            "requires": "7.12.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "native-otp-assist",
+          "version": {
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "upisdk",
+          "version": {
+            "requires": "1.8.11"
+          },
+          "excludes": [
+            {
+              "group": "in.payu",
+              "module": "paymentparamhelper"
+            }
+          ]
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.1,1.2.0)"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-asset-library-android",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-checkout-pro-3.3.3.aar",
+          "url": "payu-checkout-pro-3.3.3.aar",
+          "size": 358332,
+          "sha512": "ce7293094f4cf76d90490dec4feb109028a6e82d0d697ec9e344dabea02426392e6f4fc38e5554d4636c280fba4248db0937345ca55d6d982136bfef4aa7fdd5",
+          "sha256": "5e8d16dbb0f695d8c7d5d7cfef64a8de38ffde8b99fea998938965275b584245",
+          "sha1": "a255feeb71da30374ce030760a16a858ff14cee9",
+          "md5": "62b9a2221b103737ba1020533592e765"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-checkout-pro-3.3.3-sources.jar",
+          "url": "payu-checkout-pro-3.3.3-sources.jar",
+          "size": 138295,
+          "sha512": "72f95c72724de932dda654a1e9ed4ac42c6fd4e1d80da64eb1ad237f4a1989a92028d8d88a0b4fd66e2eea83b739fe0f3482f130d7f7482a95fe9c5bda6ee73d",
+          "sha256": "b8984bc081dde3536974363f21678371407de1329e86fa8012239d47513ba2c1",
+          "sha1": "b636d2e7baca63dacc0cf1e406748f8e1f41fd07",
+          "md5": "ff54c200477764e3f080eea3b4dbf7f8"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-checkout-pro-3.3.3-javadoc.jar",
+          "url": "payu-checkout-pro-3.3.3-javadoc.jar",
+          "size": 649677,
+          "sha512": "2edfbd53770348087d05e663c6a1aff8a942f40da6f5fecee2378a143eb8e41fe8fabd44577cb86c926c18c41f9f06776dfcc3d8c3f0b9ada9893971dd698084",
+          "sha256": "830ee1137509dc66185aad8c7545cd80af4887f0016235ad61c63ecee2e740c4",
+          "sha1": "394b29db355de1ec61376b384d98a3a9357403c3",
+          "md5": "78b7d12f62c2a3ef448a042f1f83bd8d"
+        }
+      ]
+    }
+  ]
+}

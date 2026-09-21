@@ -1,0 +1,121 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-core-networking",
+    "version": "1.4.11",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "payu-core-networking-1.4.11.aar",
+          "url": "payu-core-networking-1.4.11.aar",
+          "size": 200678,
+          "sha512": "0153fdd3fbc2dd15c48895cca18a7e3ad4bab912d1dbc4ffdadfd04a9b366a373ef9c6ca9ee7a7bda075b6024e0917d32963359d370eb574dc3099f790e7bcb5",
+          "sha256": "f18fdf8ca5ce44a1ad240d12073c2284251feeb2f60dd3de2fb79b3f35c1cf0c",
+          "sha1": "78ac123968172ffc595ec57f1b34360f2bd97822",
+          "md5": "cd7d298e8081eac43b0989a7a4a0baf9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.1,1.2.0)"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-core-networking-1.4.11.aar",
+          "url": "payu-core-networking-1.4.11.aar",
+          "size": 200678,
+          "sha512": "0153fdd3fbc2dd15c48895cca18a7e3ad4bab912d1dbc4ffdadfd04a9b366a373ef9c6ca9ee7a7bda075b6024e0917d32963359d370eb574dc3099f790e7bcb5",
+          "sha256": "f18fdf8ca5ce44a1ad240d12073c2284251feeb2f60dd3de2fb79b3f35c1cf0c",
+          "sha1": "78ac123968172ffc595ec57f1b34360f2bd97822",
+          "md5": "cd7d298e8081eac43b0989a7a4a0baf9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-core-networking-1.4.11-sources.jar",
+          "url": "payu-core-networking-1.4.11-sources.jar",
+          "size": 73151,
+          "sha512": "606ac90699088ab8e76554f7584ef947262f4c8f3fd50411d5f787d72d7b66d3dc787ae160f0a25edab9f213ad0fde58950ed85ae75619b26f13f078d898aaf3",
+          "sha256": "8cc265e0237f0ede7eb0482243aa43a58aa2e342b907059abe1f387e41d0bc23",
+          "sha1": "41d85697236fb7556103e68bc4c5b908240f6bd9",
+          "md5": "54d67c6b7c7ff098d360449c9a706f1e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-core-networking-1.4.11-javadoc.jar",
+          "url": "payu-core-networking-1.4.11-javadoc.jar",
+          "size": 563800,
+          "sha512": "98b692ed8c795af93fbf6f1a84ca1e5ee38ea0e6fd1a9a251a75b4366285835dcb3840b0a53dface68a3670e48f2f1b335076f9e4792a05ac2f1a72088f006f5",
+          "sha256": "89fee32c93d3965d949e61056e951be7e7032f772fbe8390c277a1a8f5ef5756",
+          "sha1": "a7aa05f7173f3ebc30e009b1921d1eed1f56feee",
+          "md5": "a90f0112c76d2186227d448d9e5c0dc5"
+        }
+      ]
+    }
+  ]
+}

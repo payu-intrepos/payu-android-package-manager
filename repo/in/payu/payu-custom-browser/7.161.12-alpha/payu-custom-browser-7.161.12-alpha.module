@@ -1,0 +1,170 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-custom-browser",
+    "version": "7.161.12-alpha",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "payu-custom-browser-7.161.12-alpha.aar",
+          "url": "payu-custom-browser-7.161.12-alpha.aar",
+          "size": 403202,
+          "sha512": "5116bad8bcbb8cd473fd2c0a2cdca6a327618e76ec948baadc40b54ed6eb800a221ed6d1f39158406034fb0faba913deccf6bebeeeec13783480c9b489ba8424",
+          "sha256": "95009ca8e1814cae64968790ca0cdf619a3124a2679d846eeeec4ab43f5d4072",
+          "sha1": "5ef33b517bc58a117ea7364d9f4a718f4eb34f5e",
+          "md5": "84e97af312dbe9cbd6369a9b437091ec"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.localbroadcastmanager",
+          "module": "localbroadcastmanager",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.coordinatorlayout",
+          "module": "coordinatorlayout",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-auth-api-phone",
+          "version": {
+            "requires": "17.5.1"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "common-ui-sdk",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "native-otp-reader",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.1,1.2.0)"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-custom-browser-7.161.12-alpha.aar",
+          "url": "payu-custom-browser-7.161.12-alpha.aar",
+          "size": 403202,
+          "sha512": "5116bad8bcbb8cd473fd2c0a2cdca6a327618e76ec948baadc40b54ed6eb800a221ed6d1f39158406034fb0faba913deccf6bebeeeec13783480c9b489ba8424",
+          "sha256": "95009ca8e1814cae64968790ca0cdf619a3124a2679d846eeeec4ab43f5d4072",
+          "sha1": "5ef33b517bc58a117ea7364d9f4a718f4eb34f5e",
+          "md5": "84e97af312dbe9cbd6369a9b437091ec"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-custom-browser-7.161.12-alpha-sources.jar",
+          "url": "payu-custom-browser-7.161.12-alpha-sources.jar",
+          "size": 145118,
+          "sha512": "51543591c3ce52199ceb17755d8dd38cf4addab8cd127acbb6a4970c88d8617bdcb7762beee8dabb6ef51567576a5bdcdb002ffc1bd6a36d6589c5905cc6cf1f",
+          "sha256": "eef69b9a30414b56391acebb3407823476993014d6b86584c0a4d883e3bff0f0",
+          "sha1": "0cb70f68f806a6dd6b030d02dd9f1c1adb4a80a5",
+          "md5": "777c84c03cc5dae7ada2c3546a02cb56"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-custom-browser-7.161.12-alpha-javadoc.jar",
+          "url": "payu-custom-browser-7.161.12-alpha-javadoc.jar",
+          "size": 590337,
+          "sha512": "aa6edafe0dabf0fa782a348feed2933361af33d532d8a42fa3884eaab73d34e790d4e8a2acb5851dd669d5919a055b58e6f7ddcb32dffa379cfe0441baa1c6d5",
+          "sha256": "0a566bb18f855834adea3b1075e527c21df8d06c8d66d6b39cff08978228ad5b",
+          "sha1": "547fc390f8e7db394c62dfee8951b2b9e6e8b225",
+          "md5": "d783d4a293ae0b278116a211b5cc7bfc"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "threeds-ui-sdk",
+    "version": "3.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "threeds-base-sdk",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "threeds-ui-sdk-3.0.0.aar",
+          "url": "threeds-ui-sdk-3.0.0.aar",
+          "size": 169508,
+          "sha512": "f17d99da3806b912d08ebd25288b699f7ef52a89683c52404a1c7932dbc3a4f2373dfd5b316ab0b07dcc5383a0d20577f30d1cb896dba2e4a75945e576d755eb",
+          "sha256": "c99362e5388b957746b6fda68f775023564a9234b35dc56f5c896a87f1d184ca",
+          "sha1": "d2f30af775d634c41bafaa17629838baaabe53de",
+          "md5": "9d4a81618b8947f01e69f2a8c5f071d2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "native-otp-reader",
+          "version": {
+            "requires": "1.3.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "threeds-base-sdk",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "threeds-ui-sdk-3.0.0.aar",
+          "url": "threeds-ui-sdk-3.0.0.aar",
+          "size": 169508,
+          "sha512": "f17d99da3806b912d08ebd25288b699f7ef52a89683c52404a1c7932dbc3a4f2373dfd5b316ab0b07dcc5383a0d20577f30d1cb896dba2e4a75945e576d755eb",
+          "sha256": "c99362e5388b957746b6fda68f775023564a9234b35dc56f5c896a87f1d184ca",
+          "sha1": "d2f30af775d634c41bafaa17629838baaabe53de",
+          "md5": "9d4a81618b8947f01e69f2a8c5f071d2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "threeds-ui-sdk-3.0.0-sources.jar",
+          "url": "threeds-ui-sdk-3.0.0-sources.jar",
+          "size": 45911,
+          "sha512": "d71d3d7fb9a7153e7d613d81caf93c7921f9549c61b36d63760caabfacc168476e058d5d8a1d6e95c018728f9aba526403ba3c9d015309dfeb7ed9aabfc420d9",
+          "sha256": "857c8c1e0cf7afa689861534829130a8cf0ba972a81454da9a25697441e71c19",
+          "sha1": "79e3c66a323afa934e7a213d99735a3aa2f5c605",
+          "md5": "963116170bf2a20a1912762853de5c48"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "threeds-ui-sdk-3.0.0-javadoc.jar",
+          "url": "threeds-ui-sdk-3.0.0-javadoc.jar",
+          "size": 554323,
+          "sha512": "d9d77daf7ea0ca37e17e1f927cd8fc79b47fecd5e278c6e7ca77537f730ae0ff5f1af6d4fe24dd7390d520eb4e299e283b697babd69a370a4ff631c4e30ccf6b",
+          "sha256": "ff8f4c1c80ffe770a05a6839b3b5808ccbd298dc7517a42ae1d683f8920623de",
+          "sha1": "c778003db2cfd7ff65b73faa71fda66fb901737f",
+          "md5": "097c4a388272907cd4c9b0cb2c21cb3e"
+        }
+      ]
+    }
+  ]
+}

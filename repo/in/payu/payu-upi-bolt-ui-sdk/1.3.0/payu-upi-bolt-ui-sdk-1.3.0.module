@@ -1,0 +1,172 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-upi-bolt-ui-sdk",
+    "version": "1.3.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "payu-upi-bolt-sdk",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.6.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-upi-bolt-ui-sdk-1.3.0.aar",
+          "url": "payu-upi-bolt-ui-sdk-1.3.0.aar",
+          "size": 810378,
+          "sha512": "b2905529b1740ce0fe64ead05328124ac7a11ccf721bc113e2276a59f250fe0d7f1422d08c1f28ab08b7c01c14fd8ee1fde309dd13f0387301b85e709179157d",
+          "sha256": "28621c3ded6c98bcc98d46a71d460df7b401ef1bcd2adc02a73d264d97f6f53f",
+          "sha1": "db9705b0fcac83f9bd75ddb6cf6fd359a10f209f",
+          "md5": "668f9d84a9e7d65ca9f63260a77b6b05"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "1.6.10"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-upi-bolt-sdk",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.6.10"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.0.1"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "[1.1.1,1.2.0)"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-upi-bolt-ui-sdk-1.3.0.aar",
+          "url": "payu-upi-bolt-ui-sdk-1.3.0.aar",
+          "size": 810378,
+          "sha512": "b2905529b1740ce0fe64ead05328124ac7a11ccf721bc113e2276a59f250fe0d7f1422d08c1f28ab08b7c01c14fd8ee1fde309dd13f0387301b85e709179157d",
+          "sha256": "28621c3ded6c98bcc98d46a71d460df7b401ef1bcd2adc02a73d264d97f6f53f",
+          "sha1": "db9705b0fcac83f9bd75ddb6cf6fd359a10f209f",
+          "md5": "668f9d84a9e7d65ca9f63260a77b6b05"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-upi-bolt-ui-sdk-1.3.0-sources.jar",
+          "url": "payu-upi-bolt-ui-sdk-1.3.0-sources.jar",
+          "size": 133979,
+          "sha512": "8e23b8aebd3b914366ef2c88e191ba9f2469688b32e7e18c6c8a3fe694d3786875ed20046f4e4956d15ed78d0b22d644e85c193318635c931d515a6e79c948d3",
+          "sha256": "09a5188263193370e379898f808eed71a09668bb060a66b80cc981b7c4ba89e7",
+          "sha1": "63b6ba4d356057dc544921cb4ee2ad96c960cb88",
+          "md5": "5500c0cbf31267a9b6110a235b83719a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "payu-upi-bolt-ui-sdk-1.3.0-javadoc.jar",
+          "url": "payu-upi-bolt-ui-sdk-1.3.0-javadoc.jar",
+          "size": 859978,
+          "sha512": "c8d3f067e240aa924cf746569da011b7ad9c33839fbd1fa2ecf7ac03a84670fce30567e233aec0425d69c515f3c3cb074cab813c77da7668620e015da5f9642d",
+          "sha256": "289ea424f1669dc2b5d15cfa4db6ec3b022784e6cb66598596f30c711e54759b",
+          "sha1": "79bbc51ab7bd22e14f2895a954cc1975e5ab4659",
+          "md5": "52516d07405a6b8c98cf670cf71b8c19"
+        }
+      ]
+    }
+  ]
+}
