@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   deploy:
-    if: github.repository == 'payu-intrepos/payu-android-maven' && github.ref == 'refs/heads/main'
+    if: github.repository == 'payu-intrepos/payu-android-package-manager' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
