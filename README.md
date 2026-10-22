@@ -1,15 +1,15 @@
-# payu-android-maven
+# payu-android-package-manager
 
 
 ```text
-https://payu-intrepos.github.io/payu-android-maven/
+https://payu-intrepos.github.io/payu-android-package-manager/
 ```
 
 ```kotlin
 repositories {
     google()
     mavenCentral()
-    maven { url = uri("https://payu-intrepos.github.io/payu-android-maven/") }
+    maven { url = uri("https://payu-intrepos.github.io/payu-android-package-manager/") }
 }
 
 dependencies {
