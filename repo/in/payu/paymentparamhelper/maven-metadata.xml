@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <metadata>
   <groupId>in.payu</groupId>
-  <artifactId>paymentParamHelper</artifactId>
+  <artifactId>paymentparamhelper</artifactId>
   <versioning>
     <latest>2.11.0.01-SNAPSHOT</latest>
     <release>2.11.0</release>
@@ -12,6 +12,6 @@
       <version>2.11.0</version>
       <version>2.11.0.01-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20261022102044</lastUpdated>
+    <lastUpdated>20261022110123</lastUpdated>
   </versioning>
 </metadata>
