@@ -3,13 +3,14 @@
   <groupId>in.payu</groupId>
   <artifactId>payu-checkout-pro</artifactId>
   <versioning>
-    <latest>3.3.16-SNAPSHOT</latest>
-    <release>3.3.15</release>
+    <latest>3.4.0-alpha</latest>
+    <release>3.4.0-alpha</release>
     <versions>
       <version>3.3.3</version>
       <version>3.3.15</version>
       <version>3.3.16-SNAPSHOT</version>
+      <version>3.4.0-alpha</version>
     </versions>
-    <lastUpdated>20261026163024</lastUpdated>
+    <lastUpdated>20261026165913</lastUpdated>
   </versioning>
 </metadata>
