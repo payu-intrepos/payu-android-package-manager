@@ -77,20 +77,37 @@ def main() -> int:
         action="store_true",
         help="Validate every published POM. Default with --strict is latest-only.",
     )
+    parser.add_argument(
+        "--artifact-id",
+        help="Validate only this artifact ID (skips other POMs in repo).",
+    )
+    parser.add_argument(
+        "--artifact-version",
+        help="Validate only this artifact version (used with --artifact-id).",
+    )
     args = parser.parse_args()
 
     errors: list[str] = []
     warnings: list[str] = []
 
-    pom_paths = iter_published_poms()
-    if args.strict and not args.all_versions and GROUP_PATH.exists():
-        latest_poms: list = []
-        for artifact_path in sorted(p for p in GROUP_PATH.iterdir() if p.is_dir()):
-            versions = list_versions(GROUP_ID, artifact_path.name)
-            if not versions:
-                continue
-            latest_poms.extend(sorted((artifact_path / versions[-1]).glob("*.pom")))
-        pom_paths = latest_poms
+    # If specific artifact is provided, validate only that POM
+    if args.artifact_id and args.artifact_version:
+        from pathlib import Path
+        artifact_dir = Path(GROUP_PATH) / args.artifact_id / args.artifact_version
+        if artifact_dir.exists():
+            pom_paths = sorted(artifact_dir.glob("*.pom"))
+        else:
+            pom_paths = []
+    else:
+        pom_paths = iter_published_poms()
+        if args.strict and not args.all_versions and GROUP_PATH.exists():
+            latest_poms: list = []
+            for artifact_path in sorted(p for p in GROUP_PATH.iterdir() if p.is_dir()):
+                versions = list_versions(GROUP_ID, artifact_path.name)
+                if not versions:
+                    continue
+                latest_poms.extend(sorted((artifact_path / versions[-1]).glob("*.pom")))
+            pom_paths = latest_poms
 
     for pom_path in pom_paths:
         pom = parse_pom(pom_path)
