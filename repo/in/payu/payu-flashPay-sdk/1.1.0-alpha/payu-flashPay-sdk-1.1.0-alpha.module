@@ -42,11 +42,11 @@
         {
           "name": "payu-flashPay-sdk-1.1.0-alpha.aar",
           "url": "payu-flashPay-sdk-1.1.0-alpha.aar",
-          "size": 226694,
-          "sha512": "3bda141c4abb6d4fa1ac9eef4168a98717726b14f475efdeb62712d349380c980ffa8dd69c447c553e5bca344d3db18668bff8abfa8ec5797fc65c86fe12b15e",
-          "sha256": "e896790ccc05e05c6aa48e72310b7c2eac34d0f11926dd3f87d81a47763eb993",
-          "sha1": "bf4c1084bcf8df4f1ed24dec863e8c63a6cec0d7",
-          "md5": "08b5923f7e2f4df4ef1205087d3ac39f"
+          "size": 228353,
+          "sha512": "03057a729fb6a5b6d994ce8f5f6f71794ebd84a14a5c481503fb69cea03b46fdbdc29fbf085c5657a205130199e4de58cc316dc6fa055f3f224eaa4666b15339",
+          "sha256": "11f2674d3bef4f8d3f690c1e5a6eef3e1a7b086a343246cbd78af631b251e734",
+          "sha1": "238cf9929ad526ed6729c88d6cfe86c3f4917bd3",
+          "md5": "226380c0d8a1e6adf35aa097ecc8a689"
         }
       ]
     },
@@ -154,11 +154,11 @@
         {
           "name": "payu-flashPay-sdk-1.1.0-alpha.aar",
           "url": "payu-flashPay-sdk-1.1.0-alpha.aar",
-          "size": 226694,
-          "sha512": "3bda141c4abb6d4fa1ac9eef4168a98717726b14f475efdeb62712d349380c980ffa8dd69c447c553e5bca344d3db18668bff8abfa8ec5797fc65c86fe12b15e",
-          "sha256": "e896790ccc05e05c6aa48e72310b7c2eac34d0f11926dd3f87d81a47763eb993",
-          "sha1": "bf4c1084bcf8df4f1ed24dec863e8c63a6cec0d7",
-          "md5": "08b5923f7e2f4df4ef1205087d3ac39f"
+          "size": 228353,
+          "sha512": "03057a729fb6a5b6d994ce8f5f6f71794ebd84a14a5c481503fb69cea03b46fdbdc29fbf085c5657a205130199e4de58cc316dc6fa055f3f224eaa4666b15339",
+          "sha256": "11f2674d3bef4f8d3f690c1e5a6eef3e1a7b086a343246cbd78af631b251e734",
+          "sha1": "238cf9929ad526ed6729c88d6cfe86c3f4917bd3",
+          "md5": "226380c0d8a1e6adf35aa097ecc8a689"
         }
       ]
     },
