@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>in.payu</groupId>
   <artifactId>tridentity-sdk</artifactId>
-  <version>2.0.7</version>
+  <version>2.0.0.1_alpha1</version>
   <packaging>aar</packaging>
   <name>tridentity-sdk</name>
   <description>3DS Tridentity SDK for PayU Android.</description>
@@ -16,9 +16,9 @@
   </licenses>
   <developers>
     <developer>
-      <id>mobile_payu</id>
-      <name>PayU Mobile</name>
-      <email>payumoneyapp@payumoney.com</email>
+      <id>payu</id>
+      <name>PayU payments</name>
+      <url>https://github.com/payu-intrepos/payu-3ds-sdk</url>
     </developer>
   </developers>
   <scm>
@@ -26,80 +26,116 @@
   </scm>
   <dependencies>
     <dependency>
-      <artifactId>appcompat</artifactId>
       <groupId>androidx.appcompat</groupId>
+      <artifactId>appcompat</artifactId>
       <version>1.6.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <artifactId>biometric</artifactId>
       <groupId>androidx.biometric</groupId>
+      <artifactId>biometric</artifactId>
       <version>1.1.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <artifactId>core-ktx</artifactId>
       <groupId>androidx.core</groupId>
+      <artifactId>core-ktx</artifactId>
       <version>1.6.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <artifactId>material</artifactId>
       <groupId>com.google.android.material</groupId>
+      <artifactId>material</artifactId>
       <version>1.0.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <artifactId>nimbus-jose-jwt</artifactId>
       <groupId>com.nimbusds</groupId>
+      <artifactId>nimbus-jose-jwt</artifactId>
       <version>10.0.2</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.google.crypto.tink</groupId>
+          <artifactId>tink</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>bcpkix-jdk18on</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>bcprov-jdk18on</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>bcutil-jdk18on</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
-      <artifactId>rootbeer-lib</artifactId>
       <groupId>com.scottyab</groupId>
+      <artifactId>rootbeer-lib</artifactId>
       <version>0.1.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
       <artifactId>logging-interceptor</artifactId>
-      <groupId>com.squareup.okhttp3</groupId>
       <version>4.12.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
       <artifactId>okhttp</artifactId>
-      <groupId>com.squareup.okhttp3</groupId>
       <version>4.12.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.squareup.retrofit2</groupId>
       <artifactId>converter-gson</artifactId>
-      <groupId>com.squareup.retrofit2</groupId>
       <version>2.10.0</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.squareup.okhttp3</groupId>
+          <artifactId>okhttp</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
+      <groupId>com.squareup.retrofit2</groupId>
       <artifactId>retrofit</artifactId>
-      <groupId>com.squareup.retrofit2</groupId>
       <version>2.10.0</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.squareup.okhttp3</groupId>
+          <artifactId>okhttp</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
-      <artifactId>payu-crash-logger</artifactId>
       <groupId>in.payu</groupId>
+      <artifactId>payu-crash-logger</artifactId>
       <version>0.0.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <artifactId>payuanalytics</artifactId>
       <groupId>in.payu</groupId>
+      <artifactId>payuanalytics</artifactId>
       <version>0.0.2</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.squareup.okhttp3</groupId>
+          <artifactId>okhttp</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
-      <artifactId>bcprov-jdk15to18</artifactId>
       <groupId>org.bouncycastle</groupId>
+      <artifactId>bcprov-jdk15to18</artifactId>
       <version>1.84</version>
       <scope>compile</scope>
     </dependency>
