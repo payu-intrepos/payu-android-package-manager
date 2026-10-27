@@ -53,14 +53,44 @@ def central_versions(artifact_id: str) -> list[str] | None:
     return versions
 
 
+def payu_remote_versions(artifact_id: str) -> list[str] | None:
+    """Check PayU remote Maven repository (GitHub Pages)."""
+    url = f"https://payu-intrepos.github.io/payu-android-package-manager/repo/in/payu/{artifact_id}/maven-metadata.xml"
+    request = urllib.request.Request(url, headers={"User-Agent": "payu-android-maven-validate/1.0"})
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            root = ET.fromstring(response.read())
+    except urllib.error.HTTPError as exc:
+        if exc.code == 404:
+            return None
+        raise
+    except OSError:
+        return None
+    versions = [node.text.strip() for node in root.findall("versioning/versions/version") if node.text]
+    return versions if versions else None
+
+
 def resolve_status(artifact_id: str, spec: str) -> str:
+    # Priority order: Maven Central → PayU Remote → PayU Local
+
+    # 1. Check Maven Central first
+    central = central_versions(artifact_id) or []
+    if any(version_in_range(version, spec) for version in central):
+        return "central"
+
+    # 2. Check PayU remote repository
+    payu_remote = payu_remote_versions(artifact_id) or []
+    if any(version_in_range(version, spec) for version in payu_remote):
+        return "payu-remote"
+
+    # 3. Check local PayU Maven repo
     if local_versions_matching(artifact_id, spec):
         return "local"
-    remote = central_versions(artifact_id) or []
-    if any(version_in_range(version, spec) for version in remote):
-        return "central"
-    if list_versions(GROUP_ID, artifact_id) or remote:
+
+    # If version exists anywhere but not matching spec
+    if central or payu_remote or list_versions(GROUP_ID, artifact_id):
         return "version-missing"
+
     return "missing"
 
 
@@ -118,13 +148,18 @@ def main() -> int:
             spec = dep.get("version") or ""
             coordinate = f"{GROUP_ID}:{dep['artifactId']}:{spec or '?'}"
             status = resolve_status(dep["artifactId"], spec)
-            if status == "local":
+
+            # Status hierarchy: local ✓, central ✓, payu-remote ✓, version-missing ✗, missing ✗
+            if status in ("local", "central", "payu-remote"):
+                # Dependency found - only warn in non-strict mode if from central
+                if status == "central" and not args.strict:
+                    message = f"{source} → {coordinate} ({status})"
+                    warnings.append(message)
                 continue
+
+            # Dependency not found or version missing
             message = f"{source} → {coordinate} ({status})"
-            if status == "central" and not args.strict:
-                warnings.append(message)
-            else:
-                errors.append(message)
+            errors.append(message)
 
     for warning in warnings:
         print(f"WARN  {warning}")
@@ -140,7 +175,8 @@ def main() -> int:
         )
         return 1
 
-    print(f"OK  all in.payu dependencies resolve locally{' or on Maven Central' if not args.strict else ''}")
+    sources = "locally, from PayU Remote, or from Maven Central" if not args.strict else "locally"
+    print(f"OK  all in.payu dependencies resolve {sources}")
     return 0
 
 
