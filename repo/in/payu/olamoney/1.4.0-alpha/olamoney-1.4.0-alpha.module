@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "olamoney",
+    "version": "1.4.0-alpha",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.12.0-alpha"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "olamoney-1.4.0-alpha.aar",
+          "url": "olamoney-1.4.0-alpha.aar",
+          "size": 23338,
+          "sha512": "0c3f16a7cbbd64920d296879466af94b45001277daba0b9bbf813801cf252d996154bc896e923807dfb71de2c001f230319fa2225acfd10e3d5a5f8c3d2aad38",
+          "sha256": "4249f64e7e659a1b9b5809d318bea9ce8ad18b671cc75dfc111c04bca8e5de2a",
+          "sha1": "e8516c1734d54acd2dbd5afbef4e2a76ce5cb09d",
+          "md5": "7d27188cf724a8aa284b8790a0d25d5d"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-core-networking",
+          "version": {
+            "requires": "1.4.11"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.12.0-alpha"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "olamoney-1.4.0-alpha.aar",
+          "url": "olamoney-1.4.0-alpha.aar",
+          "size": 23338,
+          "sha512": "0c3f16a7cbbd64920d296879466af94b45001277daba0b9bbf813801cf252d996154bc896e923807dfb71de2c001f230319fa2225acfd10e3d5a5f8c3d2aad38",
+          "sha256": "4249f64e7e659a1b9b5809d318bea9ce8ad18b671cc75dfc111c04bca8e5de2a",
+          "sha1": "e8516c1734d54acd2dbd5afbef4e2a76ce5cb09d",
+          "md5": "7d27188cf724a8aa284b8790a0d25d5d"
+        }
+      ]
+    }
+  ]
+}
