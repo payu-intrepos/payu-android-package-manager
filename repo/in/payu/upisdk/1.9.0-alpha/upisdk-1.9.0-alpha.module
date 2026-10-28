@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "upisdk",
+    "version": "1.9.0-alpha",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.12.0-alpha"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "upisdk-1.9.0-alpha.aar",
+          "url": "upisdk-1.9.0-alpha.aar",
+          "size": 165977,
+          "sha512": "c58b7dbbb43f63b51c07f4f51ac71850f46378a94a0422aba8e6af731d96b2d4cc75666a264cb2ec8d247b85f335060437ce5e69ad7180ab11b250fee42fab29",
+          "sha256": "3e0c98839ade449de30ca0e16b261c97ff507bb7f317c83400fe06c5cf596f07",
+          "sha1": "436e18dacc05d87dddd18c390830055b39136e6a",
+          "md5": "59b2f9077b1c090dda581ca007f2213f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "16.0.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "1.1.14-alpha"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-core-networking",
+          "version": {
+            "requires": "1.4.11"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.12.0-alpha"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "upisdk-1.9.0-alpha.aar",
+          "url": "upisdk-1.9.0-alpha.aar",
+          "size": 165977,
+          "sha512": "c58b7dbbb43f63b51c07f4f51ac71850f46378a94a0422aba8e6af731d96b2d4cc75666a264cb2ec8d247b85f335060437ce5e69ad7180ab11b250fee42fab29",
+          "sha256": "3e0c98839ade449de30ca0e16b261c97ff507bb7f317c83400fe06c5cf596f07",
+          "sha1": "436e18dacc05d87dddd18c390830055b39136e6a",
+          "md5": "59b2f9077b1c090dda581ca007f2213f"
+        }
+      ]
+    }
+  ]
+}
