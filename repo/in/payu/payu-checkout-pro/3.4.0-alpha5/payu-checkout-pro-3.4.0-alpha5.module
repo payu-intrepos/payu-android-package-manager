@@ -1,0 +1,166 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-checkout-pro",
+    "version": "3.4.0-alpha5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "payu-custom-browser",
+          "version": {
+            "requires": "7.17.0-alpha"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-checkout-pro-ui",
+          "version": {
+            "requires": "1.24.0-alpha1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-checkout-pro-3.4.0-alpha5.aar",
+          "url": "payu-checkout-pro-3.4.0-alpha5.aar",
+          "size": 367476,
+          "sha512": "ca78b45e2f45bce4a98133fe3954d120d36814c9465015735331e2722ed9a74c9dea1b82e0cb9783a07a3c67c51b51376fccdb256501c8dff56618c597cccec3",
+          "sha256": "f1ea049de9eb8a35d512d9674480170bb125a4deaaf36da8fe5b7ac5f88feaea",
+          "sha1": "e3efe9b08ff625d74f6a4f4d4fec1b12c0568e47",
+          "md5": "057820b417cce8bc5957a63222573258"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "payu-custom-browser",
+          "version": {
+            "requires": "7.17.0-alpha"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-checkout-pro-ui",
+          "version": {
+            "requires": "1.24.0-alpha1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-base",
+          "version": {
+            "requires": "18.5.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-gpay",
+          "version": {
+            "requires": "4.0.4"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-sdk",
+          "version": {
+            "requires": "7.13.0-alpha2"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "native-otp-assist",
+          "version": {
+            "requires": "1.6.7"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "upisdk",
+          "version": {
+            "requires": "1.9.0-alpha"
+          },
+          "excludes": [
+            {
+              "group": "in.payu",
+              "module": "paymentparamhelper"
+            }
+          ]
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "1.1.14-alpha"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-asset-library-android",
+          "version": {
+            "requires": "1.8.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-checkout-pro-3.4.0-alpha5.aar",
+          "url": "payu-checkout-pro-3.4.0-alpha5.aar",
+          "size": 367476,
+          "sha512": "ca78b45e2f45bce4a98133fe3954d120d36814c9465015735331e2722ed9a74c9dea1b82e0cb9783a07a3c67c51b51376fccdb256501c8dff56618c597cccec3",
+          "sha256": "f1ea049de9eb8a35d512d9674480170bb125a4deaaf36da8fe5b7ac5f88feaea",
+          "sha1": "e3efe9b08ff625d74f6a4f4d4fec1b12c0568e47",
+          "md5": "057820b417cce8bc5957a63222573258"
+        }
+      ]
+    }
+  ]
+}
