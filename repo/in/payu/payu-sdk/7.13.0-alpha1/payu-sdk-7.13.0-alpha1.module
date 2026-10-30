@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-sdk",
+    "version": "7.13.0-alpha1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.12.0-alpha"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-sdk-7.13.0-alpha1.aar",
+          "url": "payu-sdk-7.13.0-alpha1.aar",
+          "size": 430848,
+          "sha512": "b368e2d34c88d21d8c0e0bc2065a8f993f1ccbf3f72946e9296a9258db99adf5b67631dfbcd72bbc96c38f4bfd1c3e3d04faec2edfc349bb267237b88e3f77a9",
+          "sha256": "2e12961bbec5826329066ec932519a300bb412c131d24b0a156cf532e5f1b81e",
+          "sha1": "51cf9ca2e8d40a28daeff3e05f19ead8b6a62e70",
+          "md5": "4758c066b0f3356a2d74712bfb43cbda"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "1.1.14-alpha"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.12.0-alpha"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-sdk-7.13.0-alpha1.aar",
+          "url": "payu-sdk-7.13.0-alpha1.aar",
+          "size": 430848,
+          "sha512": "b368e2d34c88d21d8c0e0bc2065a8f993f1ccbf3f72946e9296a9258db99adf5b67631dfbcd72bbc96c38f4bfd1c3e3d04faec2edfc349bb267237b88e3f77a9",
+          "sha256": "2e12961bbec5826329066ec932519a300bb412c131d24b0a156cf532e5f1b81e",
+          "sha1": "51cf9ca2e8d40a28daeff3e05f19ead8b6a62e70",
+          "md5": "4758c066b0f3356a2d74712bfb43cbda"
+        }
+      ]
+    }
+  ]
+}
