@@ -1,0 +1,88 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payu-checkout-pro-base",
+    "version": "1.20.0-alpha1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "payu-checkout-pro-base-1.20.0-alpha1.aar",
+          "url": "payu-checkout-pro-base-1.20.0-alpha1.aar",
+          "size": 236005,
+          "sha512": "efb75220bb63eb6a32e0fca2177acc055f37709c4b9b27e4ea6631dc700f2de4e4deea1a98344e4ffeb7a9468f4a4fc338cdceb2450cd0f10c20e1a48c8f5d4a",
+          "sha256": "9d9c1657856fb9f4d55ed11fcc3d6a3e61b99c5cd438f1652b96c6a53f1b81eb",
+          "sha1": "f2285ed9995de4b5188de521883a81522a2a962a",
+          "md5": "1dbb3bfd87f9072af3e8576d5dea5362"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payu-checkout-pro-base-1.20.0-alpha1.aar",
+          "url": "payu-checkout-pro-base-1.20.0-alpha1.aar",
+          "size": 236005,
+          "sha512": "efb75220bb63eb6a32e0fca2177acc055f37709c4b9b27e4ea6631dc700f2de4e4deea1a98344e4ffeb7a9468f4a4fc338cdceb2450cd0f10c20e1a48c8f5d4a",
+          "sha256": "9d9c1657856fb9f4d55ed11fcc3d6a3e61b99c5cd438f1652b96c6a53f1b81eb",
+          "sha1": "f2285ed9995de4b5188de521883a81522a2a962a",
+          "md5": "1dbb3bfd87f9072af3e8576d5dea5362"
+        }
+      ]
+    }
+  ]
+}
