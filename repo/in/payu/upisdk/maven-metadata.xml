@@ -3,12 +3,13 @@
   <groupId>in.payu</groupId>
   <artifactId>upisdk</artifactId>
   <versioning>
-    <latest>1.8.22</latest>
-    <release>1.8.22</release>
+    <latest>1.9.0-alpha</latest>
+    <release>1.9.0-alpha</release>
     <versions>
       <version>1.8.11</version>
       <version>1.8.22</version>
+      <version>1.9.0-alpha</version>
     </versions>
-    <lastUpdated>20261027031146</lastUpdated>
+    <lastUpdated>20261102110021</lastUpdated>
   </versioning>
 </metadata>
