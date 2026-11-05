@@ -1,0 +1,95 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "threeds-base-sdk",
+    "version": "3.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.12.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "threeds-base-sdk-3.1.0.aar",
+          "url": "threeds-base-sdk-3.1.0.aar",
+          "size": 67245,
+          "sha512": "a65b14b1ba656b5d0fefc33c8c69bab16c801fd580faaf221f298c9d11c29d424ab2065fae1be197a83921dc17d1bcbcb03d157f8e7bbe325f5ddf4f2da6c0ed",
+          "sha256": "1e224997be2d2081822bb1306a221afa2df493c3086758c9bef5ffc1152daa16",
+          "sha1": "c84d4a525d75f3e07084a4e9f58c5aa99df3f4a3",
+          "md5": "c2da703f4c3e394eefaca229e3255e43"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "paymentparamhelper",
+          "version": {
+            "requires": "2.12.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "threeds-base-sdk-3.1.0.aar",
+          "url": "threeds-base-sdk-3.1.0.aar",
+          "size": 67245,
+          "sha512": "a65b14b1ba656b5d0fefc33c8c69bab16c801fd580faaf221f298c9d11c29d424ab2065fae1be197a83921dc17d1bcbcb03d157f8e7bbe325f5ddf4f2da6c0ed",
+          "sha256": "1e224997be2d2081822bb1306a221afa2df493c3086758c9bef5ffc1152daa16",
+          "sha1": "c84d4a525d75f3e07084a4e9f58c5aa99df3f4a3",
+          "md5": "c2da703f4c3e394eefaca229e3255e43"
+        }
+      ]
+    }
+  ]
+}
