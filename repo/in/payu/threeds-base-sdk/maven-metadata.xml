@@ -4,13 +4,14 @@
   <artifactId>threeds-base-sdk</artifactId>
   <versioning>
     <latest>3.0.0.21-SNAPSHOT</latest>
-    <release>3.0.0</release>
+    <release>3.0.0.1-alpha</release>
     <versions>
       <version>0.0.3</version>
       <version>3.0.0</version>
       <version>3.0.0.01-SNAPSHOT</version>
+      <version>3.0.0.1-alpha</version>
       <version>3.0.0.21-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20261103024852</lastUpdated>
+    <lastUpdated>20261105164348</lastUpdated>
   </versioning>
 </metadata>
