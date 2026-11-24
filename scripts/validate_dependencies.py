@@ -14,7 +14,9 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 
@@ -29,45 +31,66 @@ from lib import (
 )
 
 CENTRAL = "https://repo1.maven.org/maven2"
-_central_versions: dict[str, list[str] | None] = {}
+PAYU_REMOTE = "https://payu-intrepos.github.io/payu-android-package-manager"
+
+# Codes worth retrying: the host is up but cannot answer right now.
+TRANSIENT_CODES = {408, 425, 429, 500, 502, 503, 504}
+RETRIES = 3
+
+_versions_cache: dict[str, list[str] | None] = {}
+unreachable: set[str] = set()
+
+
+def fetch_versions(url: str) -> list[str] | None:
+    """Versions listed in a maven-metadata.xml, or None if absent or unreachable.
+
+    A 404 means the artifact genuinely is not there. Anything else is a failure to
+    answer, not an answer: retry, and if it keeps failing record the host in
+    `unreachable` so the summary can say the check was skipped rather than let a
+    transient outage read as a missing dependency.
+    """
+    if url in _versions_cache:
+        return _versions_cache[url]
+
+    request = urllib.request.Request(url, headers={"User-Agent": "payu-android-maven-validate/1.0"})
+    host = urllib.parse.urlsplit(url).netloc
+    versions: list[str] | None = None
+
+    for attempt in range(RETRIES):
+        last = attempt == RETRIES - 1
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                root = ET.fromstring(response.read())
+        except urllib.error.HTTPError as exc:
+            if exc.code == 404:
+                break
+            if exc.code in TRANSIENT_CODES and not last:
+                time.sleep(2**attempt)
+                continue
+            unreachable.add(f"{host} (HTTP {exc.code})")
+            break
+        except (OSError, ET.ParseError) as exc:
+            if not last:
+                time.sleep(2**attempt)
+                continue
+            unreachable.add(f"{host} ({exc})")
+            break
+        found = [node.text.strip() for node in root.findall("versioning/versions/version") if node.text]
+        versions = found or None
+        break
+
+    _versions_cache[url] = versions
+    return versions
 
 
 def central_versions(artifact_id: str) -> list[str] | None:
-    if artifact_id in _central_versions:
-        return _central_versions[artifact_id]
-    url = f"{CENTRAL}/in/payu/{artifact_id}/maven-metadata.xml"
-    request = urllib.request.Request(url, headers={"User-Agent": "payu-android-maven-validate/1.0"})
-    try:
-        with urllib.request.urlopen(request, timeout=30) as response:
-            root = ET.fromstring(response.read())
-    except urllib.error.HTTPError as exc:
-        if exc.code == 404:
-            _central_versions[artifact_id] = None
-            return None
-        raise
-    except OSError:
-        _central_versions[artifact_id] = None
-        return None
-    versions = [node.text.strip() for node in root.findall("versioning/versions/version") if node.text]
-    _central_versions[artifact_id] = versions
-    return versions
+    return fetch_versions(f"{CENTRAL}/in/payu/{artifact_id}/maven-metadata.xml")
 
 
 def payu_remote_versions(artifact_id: str) -> list[str] | None:
     """Check PayU remote Maven repository (GitHub Pages)."""
-    url = f"https://payu-intrepos.github.io/payu-android-package-manager/repo/in/payu/{artifact_id}/maven-metadata.xml"
-    request = urllib.request.Request(url, headers={"User-Agent": "payu-android-maven-validate/1.0"})
-    try:
-        with urllib.request.urlopen(request, timeout=30) as response:
-            root = ET.fromstring(response.read())
-    except urllib.error.HTTPError as exc:
-        if exc.code == 404:
-            return None
-        raise
-    except OSError:
-        return None
-    versions = [node.text.strip() for node in root.findall("versioning/versions/version") if node.text]
-    return versions if versions else None
+    # The Pages site serves the contents of repo/ at its root, so no /repo/ prefix.
+    return fetch_versions(f"{PAYU_REMOTE}/in/payu/{artifact_id}/maven-metadata.xml")
 
 
 def resolve_status(artifact_id: str, spec: str) -> str:
@@ -161,6 +184,8 @@ def main() -> int:
             message = f"{source} → {coordinate} ({status})"
             errors.append(message)
 
+    for host in sorted(unreachable):
+        print(f"WARN  could not reach {host}; its versions were not considered")
     for warning in warnings:
         print(f"WARN  {warning}")
     for error in errors:
@@ -170,7 +195,13 @@ def main() -> int:
         mode = "strict" if args.strict else "default"
         print(
             f"\nValidation failed ({mode}): {len(errors)} missing in.payu "
-            "dependencies. Publish those artifacts here before releasing.",
+            "dependencies. Publish those artifacts here before releasing."
+            + (
+                f"\nNote: {', '.join(sorted(unreachable))} could not be reached, "
+                "so some of these may exist there."
+                if unreachable
+                else ""
+            ),
             file=sys.stderr,
         )
         return 1
