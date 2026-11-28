@@ -1,0 +1,173 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "tridentity-sdk",
+    "version": "2.1.0-alpha3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "payuReleaseVariantPayuReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "tridentity-headless",
+          "version": {
+            "requires": "2.1.0-alpha3"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.2.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tridentity-sdk-2.1.0-alpha3.aar",
+          "url": "tridentity-sdk-2.1.0-alpha3.aar",
+          "size": 418403,
+          "sha512": "f1203c86d7ef34430d6896d8d38b5f2b7eea79e2727d42f258f62cb87e5e84b2dfa6800d0c14b95f04b15bd8590d65069d24074811d6e66fe3272d9754a5fc16",
+          "sha256": "654a43f6a1ee96d6c67d77be445bfd410ae0f3e12b15cf06d2d8af7e89537f52",
+          "sha1": "74ad55cd444af7356cd6c436e82a91b59e48ce16",
+          "md5": "7dd7a5bfa432d3e8a07d88680187e460"
+        }
+      ]
+    },
+    {
+      "name": "payuReleaseVariantPayuReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.2-alpha2"
+          },
+          "excludes": [
+            {
+              "group": "com.squareup.okhttp3",
+              "module": "okhttp"
+            }
+          ]
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "1.1.14-alpha2"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "1.1.3"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "androidx.biometric",
+          "module": "biometric",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "tridentity-headless",
+          "version": {
+            "requires": "2.1.0-alpha3"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.2.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tridentity-sdk-2.1.0-alpha3.aar",
+          "url": "tridentity-sdk-2.1.0-alpha3.aar",
+          "size": 418403,
+          "sha512": "f1203c86d7ef34430d6896d8d38b5f2b7eea79e2727d42f258f62cb87e5e84b2dfa6800d0c14b95f04b15bd8590d65069d24074811d6e66fe3272d9754a5fc16",
+          "sha256": "654a43f6a1ee96d6c67d77be445bfd410ae0f3e12b15cf06d2d8af7e89537f52",
+          "sha1": "74ad55cd444af7356cd6c436e82a91b59e48ce16",
+          "md5": "7dd7a5bfa432d3e8a07d88680187e460"
+        }
+      ]
+    }
+  ]
+}
