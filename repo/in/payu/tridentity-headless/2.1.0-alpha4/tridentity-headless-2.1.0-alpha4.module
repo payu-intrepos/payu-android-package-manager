@@ -1,0 +1,260 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "tridentity-headless",
+    "version": "2.1.0-alpha4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "tridentity-headless-2.1.0-alpha4.aar",
+          "url": "tridentity-headless-2.1.0-alpha4.aar",
+          "size": 417071,
+          "sha512": "ce8551a7c6bdd52f4f5eec1f36eae7a060038db8a1bf34dc7d80d33866f9881505127a3a54879b28e4065139e46c56e882ee3d75624e3bd92966bf64daf1a52a",
+          "sha256": "9a3c6b337e117d005c8fc5f694dd1eb1409dbe817eb9ac2a6924ffd47a7215ab",
+          "sha1": "b04716c46b0e7e304fa67a624634a30f9e631995",
+          "md5": "eece503e5f1e9c96f193b83025db316a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "1.8.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        },
+        {
+          "group": "in.payu",
+          "module": "payuanalytics",
+          "version": {
+            "requires": "1.6.2-alpha2"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            },
+            {
+              "group": "com.squareup.okhttp3",
+              "module": "okhttp"
+            },
+            {
+              "group": "com.squareup.okhttp3",
+              "module": "logging-interceptor"
+            }
+          ]
+        },
+        {
+          "group": "in.payu",
+          "module": "payu-crash-logger",
+          "version": {
+            "requires": "1.1.14-alpha2"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.6.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "2.10.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            },
+            {
+              "group": "com.squareup.okhttp3",
+              "module": "okhttp"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "2.10.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            },
+            {
+              "group": "com.squareup.okhttp3",
+              "module": "okhttp"
+            }
+          ]
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.11.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        },
+        {
+          "group": "com.scottyab",
+          "module": "rootbeer-lib",
+          "version": {
+            "requires": "0.1.1"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        },
+        {
+          "group": "androidx.biometric",
+          "module": "biometric",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        },
+        {
+          "group": "org.bouncycastle",
+          "module": "bcprov-jdk15to18",
+          "version": {
+            "requires": "1.84"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.emoji2",
+              "module": "emoji2"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "tridentity-headless-2.1.0-alpha4.aar",
+          "url": "tridentity-headless-2.1.0-alpha4.aar",
+          "size": 417071,
+          "sha512": "ce8551a7c6bdd52f4f5eec1f36eae7a060038db8a1bf34dc7d80d33866f9881505127a3a54879b28e4065139e46c56e882ee3d75624e3bd92966bf64daf1a52a",
+          "sha256": "9a3c6b337e117d005c8fc5f694dd1eb1409dbe817eb9ac2a6924ffd47a7215ab",
+          "sha1": "b04716c46b0e7e304fa67a624634a30f9e631995",
+          "md5": "eece503e5f1e9c96f193b83025db316a"
+        }
+      ]
+    }
+  ]
+}
