@@ -1,0 +1,111 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "payuanalytics",
+    "version": "1.6.2-alpha2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payuanalytics-1.6.2-alpha2.aar",
+          "url": "payuanalytics-1.6.2-alpha2.aar",
+          "size": 52911,
+          "sha512": "ef0de358563672d3edec7358f402a85ca9d52ab5d8a85c7ef85f7e74e0b86735033455817db049b9ddd25dac92d50bd8bb7913733d08ab185eec660f8cae79aa",
+          "sha256": "5531c309d0b7e6dafe6abeebf565ed8a76fef4a72704ffb9235d478e2f90fea6",
+          "sha1": "88db2114adf7218b16f5d2203a4f572df08ac0cb",
+          "md5": "ca46c6b5a53598db9fc24c538904d4b1"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "payuanalytics-1.6.2-alpha2.aar",
+          "url": "payuanalytics-1.6.2-alpha2.aar",
+          "size": 52911,
+          "sha512": "ef0de358563672d3edec7358f402a85ca9d52ab5d8a85c7ef85f7e74e0b86735033455817db049b9ddd25dac92d50bd8bb7913733d08ab185eec660f8cae79aa",
+          "sha256": "5531c309d0b7e6dafe6abeebf565ed8a76fef4a72704ffb9235d478e2f90fea6",
+          "sha1": "88db2114adf7218b16f5d2203a4f572df08ac0cb",
+          "md5": "ca46c6b5a53598db9fc24c538904d4b1"
+        }
+      ]
+    }
+  ]
+}
