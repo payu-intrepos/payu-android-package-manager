@@ -1,0 +1,122 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "in.payu",
+    "module": "threeds-ui-sdk",
+    "version": "3.1.1-alpha3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "in.payu",
+          "module": "threeds-base-sdk",
+          "version": {
+            "requires": "3.1.1-alpha2"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "threeds-ui-sdk-3.1.1-alpha3.aar",
+          "url": "threeds-ui-sdk-3.1.1-alpha3.aar",
+          "size": 162416,
+          "sha512": "7bd92fb43af0f023e5a1ca6901e1c6d14c479ceaa8659c54f008bc61f9ffe901409a447abd0d8c83a38ffe8a9412c28b4bdaa881b231b65d41bec5688c3043cc",
+          "sha256": "92ff148f5ff4abd0adee589329995395edd26efc2538cfa76c03576330223b2b",
+          "sha1": "c10e759c469d20a061abfbcd92cff15e4bb9f844",
+          "md5": "bb40b39dd30a11de527a16d14267575b"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "in.payu",
+          "module": "native-otp-reader",
+          "version": {
+            "requires": "1.4.2-alpha1"
+          },
+          "excludes": [
+            {
+              "group": "in.payu",
+              "module": "payuanalytics"
+            }
+          ]
+        },
+        {
+          "group": "in.payu",
+          "module": "threeds-base-sdk",
+          "version": {
+            "requires": "3.1.1-alpha2"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "threeds-ui-sdk-3.1.1-alpha3.aar",
+          "url": "threeds-ui-sdk-3.1.1-alpha3.aar",
+          "size": 162416,
+          "sha512": "7bd92fb43af0f023e5a1ca6901e1c6d14c479ceaa8659c54f008bc61f9ffe901409a447abd0d8c83a38ffe8a9412c28b4bdaa881b231b65d41bec5688c3043cc",
+          "sha256": "92ff148f5ff4abd0adee589329995395edd26efc2538cfa76c03576330223b2b",
+          "sha1": "c10e759c469d20a061abfbcd92cff15e4bb9f844",
+          "md5": "bb40b39dd30a11de527a16d14267575b"
+        }
+      ]
+    }
+  ]
+}
